@@ -1,0 +1,156 @@
+* {
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Trebuchet MS';
+    color: #111111;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+h1 {
+    font-size: 26px;
+    font-family: 'Trebuchet MS';
+    color: #583b1c;
+}
+h2 {
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+}
+p, a, ul, li, input, label, button, textarea {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+p {
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+.wrap {
+   background: url(../img/bg_wrap.jpg); 
+}
+
+/* Header
+------------------------------------------------------------------------------------ */
+.header {
+    padding: 25px 0 0;
+}
+.header .logo img {
+    width: 100%;
+}
+.header .navbar-nav li {
+    margin-right: 15px;
+    border-radius: 50%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #494641;
+    font-size: 16px;
+    border-radius: 50%;    
+    font-family: 'Trebuchet MS';
+}
+.header .navbar-nav li a {
+    border-radius: 50%;
+    padding: 0px;
+    color: #494641;
+}
+.header .navbar-nav li:last-child {
+    margin-right: 0px;
+}
+.header .navbar-nav li img {
+    
+}
+.header .navbar-nav li div {
+    height: 45px;
+    margin-bottom: 10px;
+}
+.header .navbar-nav li a:hover {
+    background: url(../img/nav_hover.jpg);
+    background-size: cover;
+}
+
+.header .contact h1 span {
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media
+---------------------------------------------------------------------------------------*/
+@media screen and (min-width: 1300px) {
+    .wrap {
+        width: 1300px;
+    }
+    .header .navbar-nav {
+        margin-right: 35px;
+    }
+}
+@media screen and (min-width: 1400px) {
+    .wrap {
+        width: 1400px;
+    }
+}
+@media screen and (min-width: 1500px) {
+    .wrap {
+        width: 1500px;
+    }
+}
+@media screen and (min-width: 1600px) {
+    .wrap {
+        width: 1600px;
+    }
+}
+
+
+@media screen and (max-width: 1500px) {
+    .header .navbar-nav li {
+        width: 90px;        
+    }
+    .header .navbar-nav li p {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .header .contact h1 {
+        font-size: 24px;
+    }
+    .header .contact h1 span {
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
