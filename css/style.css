@@ -7,7 +7,7 @@
 }
 body {
     margin: 0;
-    font-family: 'Trebuchet MS';
+    font-family: 'Fregat_regular';
     color: #111111;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -20,7 +20,7 @@ h1 {
 }
 h2 {
     font-size: 24px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Fregat_regular';
 }
 p, a, ul, li, input, label, button, textarea {
     list-style: none;
@@ -29,7 +29,6 @@ p, a, ul, li, input, label, button, textarea {
 }
 p {
     font-size: 18px;
-    font-family: 'Open Sans', sans-serif;
 }
 .clearfix:after {
     content: "";
@@ -42,7 +41,26 @@ p {
 .wrap {
    background: url(../img/bg_wrap.jpg); 
 }
-
+.btn_broun {
+    border: none;
+    outline: none;    
+    color: white;
+    border-radius: 5px;
+    background: #452e16;
+    background: -moz-linear-gradient(bottom, #3e2812 0%, #3e2812 50%, #6e5944 51%, #674f37 65%, #5f4327 80%, #583a1c 100%);
+    background: -webkit-linear-gradient(bottom, #3e2812 0%, #3e2812 50%, #6e5944 51%, #674f37 65%, #5f4327 80%, #583a1c 100%);
+    background: -o-linear-gradient(bottom, #3e2812 0%, #3e2812 50%, #6e5944 51%, #674f37 65%, #5f4327 80%, #583a1c 100%);
+    background: -ms-linear-gradient(bottom, #3e2812 0%, #3e2812 50%, #6e5944 51%, #674f37 65%, #5f4327 80%, #583a1c 100%);
+    background: linear-gradient(bottom, #3e2812 0%, #3e2812 50%, #6e5944 51%, #674f37 65%, #5f4327 80%, #583a1c 100%);
+}
+.btn_broun:hover {
+    background: #452e16;
+    background: -moz-linear-gradient(bottom, #f19300 0%, #f28001 50%, #f37a02 51%, #f37208 65%, #f36604 80%, #f45e03 100%);
+    background: -webkit-linear-gradient(bottom, #f19300 0%, #f28001 50%, #f37a02 51%, #f37208 65%, #f36604 80%, #f45e03 100%);
+    background: -o-linear-gradient(bottom, #f19300 0%, #f28001 50%, #f37a02 51%, #f37208 65%, #f36604 80%, #f45e03 100%);
+    background: -ms-linear-gradient(bottom, #f19300 0%, #f28001 50%, #f37a02 51%, #f37208 65%, #f36604 80%, #f45e03 100%);
+    background: linear-gradient(bottom, #f19300 0%, #f28001 50%, #f37a02 51%, #f37208 65%, #f36604 80%, #f45e03 100%);
+}
 /* Header
 ------------------------------------------------------------------------------------ */
 .header {
@@ -60,6 +78,7 @@ p {
     font-size: 16px;
     border-radius: 50%;    
     font-family: 'Trebuchet MS';
+    margin-bottom: 10px;
 }
 .header .navbar-nav li a {
     border-radius: 50%;
@@ -80,9 +99,21 @@ p {
     background: url(../img/nav_hover.jpg);
     background-size: cover;
 }
-
+.header .navbar-toggle {
+    float: none;
+    left: 50%;
+    font-size: 25px;
+}
+.header .contact {
+    text-align: right;
+}
 .header .contact h1 span {
     font-size: 20px;
+}
+.header .contact .btn_broun {
+    margin-top: 18px;    
+    font-size: 18px;
+    padding: 5px 25px;
 }
 
 
@@ -141,6 +172,32 @@ p {
         font-size: 16px;
     }
 }
+@media screen and (max-width: 991px) {
+    .header .contact h1 {
+        font-size: 18px;
+    }
+    .header .contact h1 span {
+        font-size: 12px;
+    }
+    .header .contact .btn_broun {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .header .contact {
+        text-align: center;
+    }
+    .header .contact h1 {
+        font-size: 26px;
+    }
+    .header .contact h1 span {
+        font-size: 20px;
+    }
+    .header .contact .btn_broun {
+        font-size: 18px;
+    }
+}
+
 
 
 
