@@ -17,12 +17,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1 {
     font-size: 26px;
-    font-family: 'Trebuchet MS';
     color: #583b1c;
+    font-family: 'Fregat_bold';
 }
 h2 {
     font-size: 24px;
-    font-family: 'Fregat_regular';
 }
 p, a, ul, li, input, label, button, textarea {
     list-style: none;
@@ -47,7 +46,7 @@ p {
     border: none;
     outline: none;    
     color: white;
-    border-radius: 5px;
+    border-radius: 4px;
     background: #452e16;
     background: -moz-linear-gradient(bottom, #3e2812 0%, #3e2812 50%, #6e5944 51%, #674f37 65%, #5f4327 80%, #583a1c 100%);
     background: -webkit-linear-gradient(bottom, #3e2812 0%, #3e2812 50%, #6e5944 51%, #674f37 65%, #5f4327 80%, #583a1c 100%);
@@ -151,16 +150,35 @@ p {
     padding-top: 14px;
 }
 .header .contact h1 span {
-    font-size: 20px;
+    font-size: 14px;
 }
 .header .contact .btn_broun {
-    margin-top: 18px;    
+    margin-top: 25px;    
     font-size: 18px;
     padding: 5px 25px;
+    margin-bottom: 20px;
 }
 
-
-
+/* footer 
+-------------------------------------------------------------------------------------*/
+.footer {
+    width: 100%;
+    background: white;
+    padding: 22px 0 15px;
+}
+.footer p {
+    font-size: 12px;
+    color: #000000;
+}
+.footer p a {
+    color: #f55204;
+}
+.footer .follows {
+    text-align: right;
+}
+.footer .follows a {
+    margin-left: 25px;
+}
 
 
 
@@ -283,14 +301,19 @@ p {
     .header .contact {
         text-align: center;
     }
+}
+@media screen and (max-width: 767px) {
+    .header .contact {
+        text-align: center;
+    }
     .header .contact h1 {
         font-size: 26px;
     }
-    .header .contact h1 span {
-        font-size: 20px;
-    }
     .header .contact .btn_broun {
         font-size: 18px;
+    }
+    .footer .follows  {
+        margin-top: 25px;
     }
 }
 @media screen and (max-width: 767px) {
