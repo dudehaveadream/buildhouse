@@ -8,7 +8,7 @@
 body {
     border-top: 15px solid #613813;
     margin: 0;
-    font-family: 'Trebuchet MS';
+    font-family: 'Fregat_regular';
     color: #111111;
     background: url(../img/body_bg.jpg);
 }
@@ -22,7 +22,7 @@ h1 {
 }
 h2 {
     font-size: 24px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Fregat_regular';
 }
 p, a, ul, li, input, label, button, textarea {
     list-style: none;
@@ -31,7 +31,6 @@ p, a, ul, li, input, label, button, textarea {
 }
 p {
     font-size: 18px;
-    font-family: 'Open Sans', sans-serif;
 }
 .clearfix:after {
     content: "";
@@ -44,14 +43,30 @@ p {
 .wrap {
    background: rgba(255,255,255,.8);
 }
-
+.btn_broun {
+    border: none;
+    outline: none;    
+    color: white;
+    border-radius: 5px;
+    background: #452e16;
+    background: -moz-linear-gradient(bottom, #3e2812 0%, #3e2812 50%, #6e5944 51%, #674f37 65%, #5f4327 80%, #583a1c 100%);
+    background: -webkit-linear-gradient(bottom, #3e2812 0%, #3e2812 50%, #6e5944 51%, #674f37 65%, #5f4327 80%, #583a1c 100%);
+    background: -o-linear-gradient(bottom, #3e2812 0%, #3e2812 50%, #6e5944 51%, #674f37 65%, #5f4327 80%, #583a1c 100%);
+    background: -ms-linear-gradient(bottom, #3e2812 0%, #3e2812 50%, #6e5944 51%, #674f37 65%, #5f4327 80%, #583a1c 100%);
+    background: linear-gradient(bottom, #3e2812 0%, #3e2812 50%, #6e5944 51%, #674f37 65%, #5f4327 80%, #583a1c 100%);
+}
+.btn_broun:hover {
+    background: #452e16;
+    background: -moz-linear-gradient(bottom, #f19300 0%, #f28001 50%, #f37a02 51%, #f37208 65%, #f36604 80%, #f45e03 100%);
+    background: -webkit-linear-gradient(bottom, #f19300 0%, #f28001 50%, #f37a02 51%, #f37208 65%, #f36604 80%, #f45e03 100%);
+    background: -o-linear-gradient(bottom, #f19300 0%, #f28001 50%, #f37a02 51%, #f37208 65%, #f36604 80%, #f45e03 100%);
+    background: -ms-linear-gradient(bottom, #f19300 0%, #f28001 50%, #f37a02 51%, #f37208 65%, #f36604 80%, #f45e03 100%);
+    background: linear-gradient(bottom, #f19300 0%, #f28001 50%, #f37a02 51%, #f37208 65%, #f36604 80%, #f45e03 100%);
+}
 /* Header
 ------------------------------------------------------------------------------------ */
 .header {
     padding: 25px 0 0;
-}
-.header .logo img {
-    width: 100%;
 }
 .header .navbar-nav {
     margin-right: 0;
@@ -73,7 +88,6 @@ p {
     display: inline-block;
 }
 .header .navbar-nav li {
-    /*margin-right: 40px;*/
     float: none;
     display: inline-block;
     border-radius: 50%;
@@ -81,7 +95,9 @@ p {
     text-transform: uppercase;
     color: #494641;
     font-size: 16px;
-    border-radius: 50%;
+    border-radius: 50%;    
+    font-family: 'Trebuchet MS';
+    margin-bottom: 10px;
 }
 .header .navbar-nav li a {
     border-radius: 50%;
@@ -107,7 +123,7 @@ p {
 .header .navbar-nav li .img .hover_icon {
     display: none;
 }
-.header .navbar-nav li a:hover {
+.header .navbar-nav li a {
     background: url(../img/nav_hover.png);
     background-size: cover;
     color: #FFF;
@@ -118,8 +134,21 @@ p {
 .header .navbar-nav li a:hover .hover_icon {
     display: inline-block;
 }
+.header .navbar-toggle {
+    float: none;
+    left: 50%;
+    font-size: 25px;
+}
+.header .contact {
+    text-align: right;
+}
 .header .contact h1 span {
     font-size: 20px;
+}
+.header .contact .btn_broun {
+    margin-top: 18px;    
+    font-size: 18px;
+    padding: 5px 25px;
 }
 
 
@@ -137,19 +166,9 @@ p {
 
 /* media
 ---------------------------------------------------------------------------------------*/
-@media screen and (min-width: 1330px) {
+@media screen and (min-width: 1230px) {
     .wrap {
         width: 1200px;
-    }
-}
-@media screen and (min-width: 1430px) {
-    .wrap {
-        width: 1300px;
-    }
-}
-@media screen and (min-width: 1530px) {
-    .wrap {
-        width: 1400px;
     }
 }
 @media screen and (min-width: 1675px) {
@@ -157,33 +176,35 @@ p {
         width: 1645px;
     }
 }
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1675px) {
+    .header .logo img {
+        width: 100%;
+    }
     .header .navbar-nav li a {
-        height: 115px;
-        width: 115px;
+        height: 103px;
+        width: 103px;
+        font-size: 14px;
     }
     .header .navbar-nav li a .img {
-        height: 70px;
-        line-height: 70px;
+        height: 68px;
+        line-height: 68px;
     }
 }
-@media screen and (max-width: 1500px) {
-    .header .navbar-nav li a {
-        height: 92px;
-        width: 92px;
-        font-size: 12px;
-    }
-    .header .navbar-nav li a .img {
-        height: 60px;
-        line-height: 60px;
-    }
-}
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1229px) {
     .header .contact h1 {
         font-size: 24px;
     }
     .header .contact h1 span {
         font-size: 16px;
+    }
+    .header .navbar-nav li a {
+        height: 93px;
+        width: 93px;
+        font-size: 12px;
+    }
+    .header .navbar-nav li a .img {
+        height: 62px;
+        line-height: 62px;
     }
 }
 @media screen and (max-width: 1199px) {
@@ -197,6 +218,32 @@ p {
         line-height: 78px;
     }
 }
+@media screen and (max-width: 991px) {
+    .header .contact h1 {
+        font-size: 18px;
+    }
+    .header .contact h1 span {
+        font-size: 12px;
+    }
+    .header .contact .btn_broun {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .header .contact {
+        text-align: center;
+    }
+    .header .contact h1 {
+        font-size: 26px;
+    }
+    .header .contact h1 span {
+        font-size: 20px;
+    }
+    .header .contact .btn_broun {
+        font-size: 18px;
+    }
+}
+
 
 
 
