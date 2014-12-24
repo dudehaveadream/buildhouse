@@ -55,7 +55,7 @@ p {
 }
 .btn_broun {
     border: none;
-    outline: none;    
+    outline: none;
     color: white;
     border-radius: 4px;
     background: #452e16;
@@ -112,7 +112,7 @@ p {
     text-transform: uppercase;
     color: #494641;
     font-size: 16px;
-    border-radius: 50%;    
+    border-radius: 50%;
     font-family: 'Fregat_regular';
     margin-bottom: 10px;
 }
@@ -164,7 +164,7 @@ p {
     font-size: 14px;
 }
 .header .contact .btn_broun {
-    margin-top: 25px;    
+    margin-top: 25px;
     font-size: 18px;
     padding: 5px 25px;
     margin-bottom: 20px;
@@ -186,7 +186,7 @@ p {
     padding: 25px 15px 0;
 }
 
-.carousel .carousel-caption .info .info_content {    
+.carousel .carousel-caption .info .info_content {
     -o-transform: skewy(-5deg);
     -moz-transform: skewy(-5deg);
     -webkit-transform: skewy(-5deg);
@@ -350,7 +350,7 @@ p {
 
 
 
-/* footer 
+/* footer
 -------------------------------------------------------------------------------------*/
 .footer {
     width: 100%;
@@ -419,6 +419,11 @@ p {
     width: 255px;
     padding-left: 28px;
 }
+.sidebar .popup_open.new a:after {
+    content: 'new';
+    position: relative;
+    bottom: 2px;
+}
 .sidebar .popup_open a {
     font-family: 'Fregat_bold';
     color: #000;
@@ -438,9 +443,21 @@ p {
     content: '';
     background-position: 0 -18px;
 }
+.sidebar .empty .popup_open:before {
+    content: '';
+    background-position: 0 0;
+}
+.sidebar > li.empty:before {
+    content: '';
+    opacity: 0;
+}
+.sidebar .popup li {
+    margin-top: 12px;
+}
 .sidebar .popup li a {
     display: block;
     line-height: 32px;
+    font-size: 17px;
     text-decoration: none;
     color: #583b1c;
     padding-left: 34px;
@@ -455,6 +472,11 @@ p {
     font-weight: bold;
     font-size: 14px;
     margin-left: 30px;
+    background: #E50000;
+    background: linear-gradient(top, #FF0000, #E50000);
+    background: -o-linear-gradient(top, #FF0000, #E50000);
+    background: -moz-linear-gradient(top, #FF0000, #E50000);
+    background: -ms-linear-gradient(top, #FF0000, #E50000);
     background: -webkit-linear-gradient(top, #FF0000, #E50000);
     color: #fff;
     display: inline-block;
@@ -465,6 +487,79 @@ p {
 .sidebar .popup li a:hover {
     background: #916E52;
     color: #fff;
+}
+/* Sidebar right
+---------------------------------------------------------------------------------------*/
+.sidebar_right .info_container .info_btn {
+    width: 74px;
+    height: 74px;
+    background: url(../img/nav_hover.png);
+    background-size: cover;
+    margin: auto;
+    line-height: 74px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.sidebar_right .info_container .info_btn img {
+    vertical-align: middle;
+}
+.sidebar_right .info {
+    width: 276px;
+    background: #fff;
+    border-bottom: 3px solid #CBC1BA;
+    border-right: 2px solid #CBC1BA;
+    border-radius: 5px;
+    position: relative;
+    padding-bottom: 15px;
+    margin: auto;
+    margin-bottom: 35px;
+    margin-top: 30px;
+}
+.sidebar_right .info h1 {
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Fregat_bold';
+    line-height: 36px;
+    padding-left: 15px;
+    background: #9FA3A6;
+}
+.sidebar_right .info h1.first {
+    border-radius: 5px 5px 0 0;
+}
+.sidebar_right .info:before {
+    content: '';
+    border: 18px solid transparent;
+    border-bottom-color: #9FA3A6;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    position: absolute;
+    left: 50%;
+    margin-left: -10px;
+    bottom: 100%;
+}
+.sidebar_right .info h1 span {
+    float: right;
+    padding-right: 25px;
+}
+.sidebar_right .info table {
+    width: 100%;
+    margin-top: 12px;
+}
+.sidebar_right .info table td {
+    font-size: 16px;
+}
+.sidebar_right .info table td:first-child {
+    font-family: 'Fregat_regular';
+    color: #525252;
+    padding-left: 15px;
+}
+.sidebar_right .info table td:nth-child(2) {
+    font-family: 'Fregat_bold';
+    color: #f46103;
+    text-align: right;
+    padding-right: 15px;
+    height: 32px;
 }
 
 /* media
@@ -543,11 +638,6 @@ p {
     .header .contact .btn_broun {
         font-size: 18px;
     }
-    .footer .follows  {
-        margin-top: 25px;
-    }
-}
-@media screen and (max-width: 767px) {
     .header .navbar-nav {
         text-align: left;
     }
@@ -585,8 +675,18 @@ p {
     .advantage ul li {
         height: auto;
     }
+    .footer .follows  {
+        margin-top: 25px;
+    }
 }
-
+@media screen and (max-width: 335px) {
+    .header .logo img {
+        width: 100%;
+    }
+    .advantage ul li p {
+        font-size: 14px;
+    }
+}
 
 
 

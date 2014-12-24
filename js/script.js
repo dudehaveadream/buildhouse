@@ -4,4 +4,5 @@ $(document).ready(function(){
 		$(this).parent().toggleClass('open');
 		$(this).parent().toggleClass('closes')
 	})
+	$('.sidebar_right .info').find('h1:first').addClass('first')
 });
