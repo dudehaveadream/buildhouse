@@ -18,21 +18,59 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     font-size: 36px;
     color: #fc7256;
-    font-family: 'Fregat_regular';
 }
 h2 {
     font-size: 34px;
     color: #0385f4;
-    font-family: 'Fregat_Bold';
+    font-family: 'Fregat_bold';
 }
 h3 {
     font-size: 26px;
     color: #583b1c;
-    font-family: 'Fregat_Bold';
+    font-family: 'Fregat_bold';
 }
 h4 {
     font-size: 24px;
-    font-family: 'Fregat_Bold';
+    font-family: 'Fregat_bold';
+}
+h5 {
+    font-size: 20px;
+}
+div.title h5 {
+    display: inline-block;
+    color: #fff;
+    padding: 9px 40px;
+    background: #916e52;
+    position: relative;
+    box-shadow: 1px 2px 0 rgba(79,79,79,.1);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+div.title h5:after {
+    content: '';
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 20px;
+    height: 43px;
+    background: url(../img/title_after.png) no-repeat;
+}
+.content_inner {
+    background: #fff;
+    padding: 25px 45px;
+    box-shadow: 3px 3px 0 rgba(79,79,79,.1);
+    position: relative;
+}
+.content_inner div.title {
+    position: absolute;
+    left: 0;
+    top: -20px;
+}
+.content_inner div.title h5 {
+    background: #c8c0b8;
+}
+.content_inner div.title h5:after {
+    background: url(../img/title_gray_after.png) no-repeat;
 }
 p, a, ul, li, input, label, button, textarea {
     list-style: none;
@@ -57,7 +95,7 @@ p {
 a.btn_brown {
     text-decoration: none;
     text-align: center;
-    font-family: 'Fregat_Bold';
+    font-family: 'Fregat_bold';
     text-transform: uppercase;
     display: inline-block;
     border: none;
@@ -81,7 +119,7 @@ a.btn_brown {
 }
 a.btn_brown:hover,
 a.btn_brown:focus {
-    color: #fff; 
+    color: #fff;
 }
 /* Header
 ------------------------------------------------------------------------------------ */
@@ -299,7 +337,7 @@ a.btn_brown:focus {
 /* advantage
 ---------------------------------------------------*/
 .advantage {
-    text-align: center;    
+    text-align: center;
     background: white;
     padding: 50px 20px 40px;
 }
@@ -332,7 +370,7 @@ a.btn_brown:focus {
 .advantage ul li .img_container {
     display: table-cell;
     vertical-align: middle;
-    width: 94px;    
+    width: 94px;
 }
 .advantage ul li p {
    display: table-cell;
@@ -342,28 +380,56 @@ a.btn_brown:focus {
    text-align: left;
 }
 
+/* Contacts
+----------------------------------------------------------------------------*/
+.contacts {}
+.contacts_data p {
+    font-size: 14px;
+}
+.contacts_data p.title {
+    color: #919191;
+}
+.contacts_data hr {
+    margin-bottom: 0;
+}
+.contacts .map_container {
+    height: 400px;
+    box-shadow: 3px 3px 0 rgba(79,79,79,.1);
+    margin-bottom: 40px;
+}
+.contacts .map_container iframe {
+    width: 100%;
+    height: 400px;
+}
+.contacts .contacts_team {
+    margin-bottom: 75px;
+}
+.contacts .contacts_team .contacts_team_item {
+    margin: 25px 0;
+}
+.contacts .contacts_team .image_container {
+    float: left;
+    margin-right: 18px;
+}
+.contacts .contacts_team .image_container img {
+    width: 130px;
+    height: 160px;
+}
+.contacts .contacts_team .team_data {
+    padding-left: 148px;
+}
+.contacts .contacts_team .team_data p {
+    font-size: 16px;
+}
+.contacts .contacts_team .team_data p.post {
+    font-size: 14px;
+    color: #707070;
+}
+.contacts .contacts_team .team_data h5 {
+    margin: 10px 0 20px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* footer
+/* Footer
 -------------------------------------------------------------------------------------*/
 .footer {
     width: 100%;
@@ -627,7 +693,7 @@ a.btn_brown:focus {
     font-size: 16px;
     color: #fff;
 }
-/* footer 
+/* footer
 -------------------------------------------------------------------------------------*/
 .footer {
     width: 100%;
@@ -795,6 +861,16 @@ a.btn_brown:focus {
     }
     .advantage ul li {
         width: 100%;
+    }
+    .contacts .contacts_team .image_container {
+        float: none;
+        text-align: center;
+        margin-right: 0;
+    }
+    .contacts .contacts_team .team_data {
+        padding-left: 0;
+        text-align: center;
+        margin-top: 25px;
     }
 }
 @media screen and (max-width: 335px) {
