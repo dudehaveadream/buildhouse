@@ -614,6 +614,9 @@ p {
         width: 123px;
         font-size: 16px;
     }
+    .advantage ul li {
+        width: 50%;
+    }
     .header .navbar-nav li a .img {
         height: 78px;
         line-height: 78px;
@@ -677,6 +680,11 @@ p {
     }
     .footer .follows  {
         margin-top: 25px;
+    }
+}
+@media screen and (max-width: 637px) {
+    .advantage ul li {
+        width: 100%;
     }
 }
 @media screen and (max-width: 335px) {
