@@ -16,11 +16,21 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 h1 {
+    font-size: 36px;
+    color: #fc7256;
+
+}
+h2 {
+    font-size: 34px;
+    color: #0385f4;
+    font-family: 'Fregat_bold';
+}
+h3 {
     font-size: 26px;
     color: #583b1c;
     font-family: 'Fregat_bold';
 }
-h2 {
+h4 {
     font-size: 24px;
 }
 p, a, ul, li, input, label, button, textarea {
@@ -149,7 +159,7 @@ p {
     text-align: right;
     padding-top: 14px;
 }
-.header .contact h1 span {
+.header .contact h4 span {
     font-size: 14px;
 }
 .header .contact .btn_broun {
@@ -158,6 +168,51 @@ p {
     padding: 5px 25px;
     margin-bottom: 20px;
 }
+/* main content
+----------------------------------------------------------------------------*/
+.carousel {
+    height: 400px;
+}
+.carousel .item img {
+    height: 400px;
+}
+.carousel .carousel-caption .info {
+    height: 320px;
+    width: 232px;
+    background: url(../img/bg_info.png);
+    text-align: left;
+}
+.carousel .carousel-caption .info .info_content {
+    padding: 25px 10px 0;
+}
+.carousel .carousel-caption .info .info_content h2 {
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* footer 
 -------------------------------------------------------------------------------------*/
@@ -266,10 +321,10 @@ p {
     }
 }
 @media screen and (max-width: 1229px) {
-    .header .contact h1 {
+    .header .contact h3 {
         font-size: 24px;
     }
-    .header .contact h1 span {
+    .header .contact h3 span {
         font-size: 16px;
     }
     .header .navbar-nav li a {
@@ -306,7 +361,7 @@ p {
     .header .contact {
         text-align: center;
     }
-    .header .contact h1 {
+    .header .contact h3 {
         font-size: 26px;
     }
     .header .contact .btn_broun {
