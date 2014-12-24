@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     font-size: 36px;
     color: #fc7256;
-
+    font-family: 'Fregat_regular';
 }
 h2 {
     font-size: 34px;
@@ -186,7 +186,6 @@ a.btn_brown:focus {
 ----------------------------------------------------------------------------*/
 .carousel {
     height: 400px;
-    margin-bottom: 60px;
 }
 .carousel .item img {
     height: 400px;
@@ -279,11 +278,113 @@ a.btn_brown:focus {
 }
 /* describe
 --------------------------------------------------*/
+.describe {
+    background: white;
+    padding: 60px 20px 50px;
+}
 .describe h4 {
     margin-bottom: 55px;
     text-align: center;
     font-family: 'Fregat_regular';
 }
+.describe p {
+    font-size: 16px;
+    line-height: 20px;
+}
+.describe p span {
+    color: #876e54;
+    margin: 30px 0;
+    display: block;
+}
+/* advantage
+---------------------------------------------------*/
+.advantage {
+    text-align: center;    
+    background: white;
+    padding: 50px 20px 40px;
+}
+.advantage h1 {
+    position: relative;
+}
+.advantage h1:after {
+    content: '';
+    position: absolute;
+    width: 75px;
+    border-top: 4px solid #f47e09;
+    bottom: -20px;
+    left: 42%;
+}
+.advantage ul {
+    margin-top: 100px;
+}
+.advantage ul li {
+    list-style-type: none;
+    float: left;
+    width: 50%;
+    display: table;
+    text-align: left;
+    padding-right: 15px;
+    margin-bottom: 50px;
+}
+.advantage ul li img {
+    margin-right: 20px;
+}
+.advantage ul li .img_container {
+    display: table-cell;
+    vertical-align: middle;
+    width: 94px;    
+}
+.advantage ul li p {
+   display: table-cell;
+   vertical-align: middle;
+   font-size: 18px;
+   line-height: 20px;
+   text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer
+-------------------------------------------------------------------------------------*/
+.footer {
+    width: 100%;
+    background: white;
+    padding: 22px 0 15px;
+}
+.footer p {
+    font-size: 12px;
+    color: #000000;
+}
+.footer p a {
+    color: #f55204;
+}
+.footer .follows {
+    text-align: right;
+}
+.footer .follows a {
+    margin-left: 25px;
+}
+
+
 /* Sidebar
 ---------------------------------------------------------------------------------------*/
 .sidebar .popup {
@@ -377,7 +478,6 @@ a.btn_brown:focus {
     width: 40px;
     line-height: 19px;
     padding-bottom: 1px;
-    font-family: 'Trebuchet MS';
     font-weight: bold;
     font-size: 14px;
     margin-left: 20px;
@@ -681,6 +781,9 @@ a.btn_brown:focus {
     .header .navbar-collapse {
         padding-top: 25px;
     }
+    .advantage ul li {
+        height: auto;
+    }
     .footer .follows  {
         margin-top: 25px;
     }
@@ -688,6 +791,9 @@ a.btn_brown:focus {
 @media screen and (max-width: 335px) {
     .header .logo img {
         width: 100%;
+    }
+    .advantage ul li p {
+        font-size: 14px;
     }
 }
 
