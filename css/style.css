@@ -34,6 +34,10 @@ h4 {
     font-size: 24px;
     font-family: 'Fregat_bold';
 }
+h5 {
+    font-size: 20px;
+    font-family: 'Fregat_bold';
+}
 p, a, ul, li, input, label, button, textarea {
     list-style: none;
     margin: 0;
@@ -328,11 +332,105 @@ p {
    line-height: 20px;
    text-align: left;
 }
-
-
-
-
-
+/* Delivery
+-------------------------------------------------------------------------------------------------------------------*/
+.delivery {    
+    margin-top: 45px;
+    background: none;
+}
+.delivery h1 {
+    font-size: 30px;
+    text-align: center;
+}
+.partners {
+    box-shadow: 1px 2px 0 rgba(79,79,79,.1);
+    -web-box-shadow: 1px 2px 0 rgba(79,79,79,.1);
+    -moz-box-shadow: 1px 2px 0 rgba(79,79,79,.1);
+    -o-box-shadow: 1px 2px 0 rgba(79,79,79,.1);
+    -ms-box-shadow: 1px 2px 0 rgba(79,79,79,.1);
+}
+.delivery p {
+    font-size: 16px;
+    margin-top: 20px;
+}
+.partners {
+    background: white;
+    padding: 50px 0 0px;
+    margin-top: 45px;
+}
+.partners .list {
+    margin-bottom: 74px;
+}
+.partners .list div {
+    height: 95px;
+    position: relative;
+    margin-bottom: 30px;
+}
+.partners .list:nth-child(4n) {
+    clear: right;
+}
+.partners .list:nth-child(5n) {
+    clear: left;
+}
+.partners .list img {
+    position: absolute;
+    bottom: 0px;
+}
+.partners p {
+    display: block;
+    margin-bottom: 20px;
+    padding-left: 5px;
+    line-height: 12px;    
+}
+.partners a {
+    text-decoration: underline;
+}
+.partners a:hover {
+    text-decoration: none;
+}
+.partners a.company {
+    font-size: 16px;
+    color: #332e26;
+}
+.partners a.company:hover {
+    color: #f45a04;
+}
+.partners a.other {
+    font-size: 12px;
+    color: #f45a04;
+}
+.partners a.other:hover {
+    text-decoration: none;
+}
+.order {
+    padding: 45px 0 265px;
+}
+.order p {
+    font-size: 16px;
+    line-height: 18px;
+}
+.order p span {
+    color: #876e54;
+    display: block;
+    margin: 25px 0 15px;
+}
+.order h1 {
+    text-align: center;
+    margin-top: 72px;
+    color: #fd7528;
+}
+.order h1 span {
+    position: relative;
+}
+.order h1 span:before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    border-top: 4px solid #fd7528;
+    width: 80px;
+    left: 38%;
+    top: -15px;
+}
 
 
 
@@ -612,7 +710,7 @@ p {
     .header .navbar-nav li a {
         height: 123px;
         width: 123px;
-        font-size: 16px;
+        font-size: 16px;        
     }
     .advantage ul li {
         width: 50%;
@@ -629,6 +727,18 @@ p {
     }
     .header .contact {
         text-align: center;
+    }
+    .partners .list:nth-child(3n) {
+    clear: right;
+    }
+    .partners .list:nth-child(4n) {
+        clear: left;
+    }
+    .partners .list:nth-child(4n) {
+        clear: none;
+    }
+    .partners .list:nth-child(5n) {
+        clear: none;
     }
 }
 @media screen and (max-width: 767px) {
