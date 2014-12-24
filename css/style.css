@@ -181,15 +181,59 @@ p {
     width: 232px;
     background: url(../img/bg_info.png);
     text-align: left;
+    padding: 25px 15px 0;
 }
-.carousel .carousel-caption .info .info_content {
-    padding: 25px 10px 0;
+
+.carousel .carousel-caption .info .info_content {    
+    -o-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+    position: relative;
 }
 .carousel .carousel-caption .info .info_content h2 {
     font-size: 30px;
 }
-
-
+.carousel .carousel-caption .info .windows {
+    margin-top: 15px;
+    padding: 10px 15px 25px;
+    background: #0294ac;
+    background: -moz-linear-gradient(left, #038f86 0%, #029195 20%, #0196b5 51%, #0198c7 65%, #009bd7 80%, #009ce1 100%);
+    background: -webkit-linear-gradient(left, #038f86 0%, #029195 20%, #0196b5 51%, #0198c7 65%, #009bd7 80%, #009ce1 100%);
+    background: -o-linear-gradient(left, #038f86 0%, #029195 20%, #0196b5 51%, #0198c7 65%, #009bd7 80%, #009ce1 100%);
+    background: -ms-linear-gradient(left, #038f86 0%, #029195 20%, #0196b5 51%, #0198c7 65%, #009bd7 80%, #009ce1 100%);
+    background: linear-gradient(left, #038f86 0%, #029195 20%, #0196b5 51%, #0198c7 65%, #009bd7 80%, #009ce1 100%);
+}
+.carousel .carousel-caption .info .info_content .windows p {
+    font-size: 16px;
+}
+.carousel .carousel-caption .info .info_content .price {
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    bottom: -20px;
+    right: 5px;
+    background: #452e16;
+    background: -moz-linear-gradient(right, #f19300 0%, #f28001 50%, #f37a02 51%, #f37208 65%, #f36604 80%, #f45e03 100%);
+    background: -webkit-linear-gradient(right, #f19300 0%, #f28001 50%, #f37a02 51%, #f37208 65%, #f36604 80%, #f45e03 100%);
+    background: -o-linear-gradient(right, #f19300 0%, #f28001 50%, #f37a02 51%, #f37208 65%, #f36604 80%, #f45e03 100%);
+    background: -ms-linear-gradient(right, #f19300 0%, #f28001 50%, #f37a02 51%, #f37208 65%, #f36604 80%, #f45e03 100%);
+    background: linear-gradient(right, #f19300 0%, #f28001 50%, #f37a02 51%, #f37208 65%, #f36604 80%, #f45e03 100%);
+    padding: 10px 0 0;
+    text-align: right;
+}
+.carousel .carousel-caption .info .info_content .price p {
+    font-size: 16px;
+    display: inline-block;
+    font-family: 'Fregat_Bold';
+}
+.carousel .carousel-caption .info .info_content .price p span {
+    font-size: 12px;
+}
+.carousel .carousel-caption .info .info_content .price h4 {
+    display: inline-block;
+    font-size: 22px;
+}
 
 
 
