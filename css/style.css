@@ -113,7 +113,7 @@ p {
     color: #494641;
     font-size: 16px;
     border-radius: 50%;    
-    font-family: 'Trebuchet MS';
+    font-family: 'Fregat_regular';
     margin-bottom: 10px;
 }
 .header .navbar-nav li a {
@@ -122,7 +122,7 @@ p {
     color: #494641;
     width: 123px;
     height: 123px;
-    font-family: 'Trebuchet MS';
+    font-family: 'Fregat_regular';
     font-weight: bold;
     font-size: 16px;
 }
@@ -173,9 +173,11 @@ p {
 ----------------------------------------------------------------------------*/
 .carousel {
     height: 400px;
+    margin-bottom: 60px;
 }
 .carousel .item img {
     height: 400px;
+    width: 100%;
 }
 .carousel .carousel-caption .info {
     height: 320px;
@@ -256,11 +258,18 @@ p {
 }
 .main_content .carousel-control.right_arrow {
     background-position: -25px 0;
-    left: 94%;
+    left: 95%;
 }
 .main_content .carousel-control.right_arrow:hover {
     background-position: -25px -25px;
     opacity: 1;
+}
+/* describe
+--------------------------------------------------*/
+.describe h4 {
+    margin-bottom: 55px;
+    text-align: center;
+    font-family: 'Fregat_regular';
 }
 
 
