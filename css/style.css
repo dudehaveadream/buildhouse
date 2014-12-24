@@ -682,6 +682,9 @@ a.btn_brown:focus {
     .sidebar_right .info {
         width: 100%;
     }
+    .advantage ul li {
+        width: 100%;
+    }
 }
 @media screen and (max-width: 1229px) {
     .header .contact h3 {
@@ -790,8 +793,6 @@ a.btn_brown:focus {
     .footer .follows  {
         margin-top: 25px;
     }
-}
-@media screen and (max-width: 637px) {
     .advantage ul li {
         width: 100%;
     }
