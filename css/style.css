@@ -381,6 +381,11 @@ p {
     font-weight: bold;
     font-size: 14px;
     margin-left: 30px;
+    background: #E50000;
+    background: linear-gradient(top, #FF0000, #E50000);
+    background: -o-linear-gradient(top, #FF0000, #E50000);
+    background: -moz-linear-gradient(top, #FF0000, #E50000);
+    background: -ms-linear-gradient(top, #FF0000, #E50000);
     background: -webkit-linear-gradient(top, #FF0000, #E50000);
     color: #fff;
     display: inline-block;
@@ -394,13 +399,31 @@ p {
 }
 /* Sidebar right
 ---------------------------------------------------------------------------------------*/
+.sidebar_right .info_container .info_btn {
+    width: 74px;
+    height: 74px;
+    background: url(../img/nav_hover.png);
+    background-size: cover;
+    margin: auto;
+    line-height: 74px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.sidebar_right .info_container .info_btn img {
+    vertical-align: middle;
+}
 .sidebar_right .info {
     width: 276px;
-    height: 100px;
     background: #fff;
     border-bottom: 3px solid #CBC1BA;
     border-right: 2px solid #CBC1BA;
     border-radius: 5px;
+    position: relative;
+    padding-bottom: 15px;
+    margin: auto;
+    margin-bottom: 35px;
+    margin-top: 30px;
 }
 .sidebar_right .info h1 {
     font-size: 16px;
@@ -410,10 +433,44 @@ p {
     padding-left: 15px;
     background: #9FA3A6;
 }
+.sidebar_right .info h1.first {
+    border-radius: 5px 5px 0 0;
+}
+.sidebar_right .info:before {
+    content: '';
+    border: 18px solid transparent;
+    border-bottom-color: #9FA3A6;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    position: absolute;
+    left: 50%;
+    margin-left: -10px;
+    bottom: 100%;
+}
 .sidebar_right .info h1 span {
     float: right;
     padding-right: 25px;
 }
+.sidebar_right .info table {
+    width: 100%;
+    margin-top: 12px;
+}
+.sidebar_right .info table td {
+    font-size: 16px;
+}
+.sidebar_right .info table td:first-child {
+    font-family: 'Fregat_regular';
+    color: #525252;
+    padding-left: 15px;
+}
+.sidebar_right .info table td:nth-child(2) {
+    font-family: 'Fregat_bold';
+    color: #f46103;
+    text-align: right;
+    padding-right: 15px;
+    height: 32px;
+}
+
 /* media
 ---------------------------------------------------------------------------------------*/
 @media screen and (min-width: 1230px) {
@@ -487,11 +544,6 @@ p {
     .header .contact .btn_broun {
         font-size: 18px;
     }
-    .footer .follows  {
-        margin-top: 25px;
-    }
-}
-@media screen and (max-width: 767px) {
     .header .navbar-nav {
         text-align: left;
     }
@@ -526,8 +578,15 @@ p {
     .header .navbar-collapse {
         padding-top: 25px;
     }
+    .footer .follows  {
+        margin-top: 25px;
+    }
 }
-
+@media screen and (max-width: 335px) {
+    .header .logo img {
+        width: 100%;
+    }
+}
 
 
 
