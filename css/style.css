@@ -194,6 +194,7 @@ p {
     position: relative;
     overflow: hidden;
     padding-left: 7px;
+    margin-bottom: 20px;
 }
 .sidebar > li:before {
     content: '';
@@ -203,9 +204,35 @@ p {
     background: #916E52;
     left: 7px;
     top: 10px;
+    opacity: 1;
+}
+.sidebar > li.open:before {
+    content: '';
+    opacity: 1;
+}
+.sidebar > li.open .popup {
+    display: block;
+}
+.sidebar > li.closes:before {
+    content: '';
+    opacity: 0;
+    transition-delay: .2s;
+    -o-transition-delay: .2s;
+    -webkit-transition-delay: .2s;
+    -ms-transition-delay: .2s;
+    -moz-transition-delay: .2s;
 }
 .sidebar .popup_open {
     position: relative;
+    line-height: 22px;
+    width: 255px;
+    padding-left: 28px;
+}
+.sidebar .popup_open a {
+    font-family: 'Fregat_Bold';
+    color: #000;
+    font-size: 19px;
+    text-decoration: none;
 }
 .sidebar .popup_open:before {
     content: '';
@@ -214,25 +241,36 @@ p {
     background: url(../img/sidebar_icon.png);
     position: absolute;
     left: -7px;
-    top: 2px;
+    top: 0px;
 }
 .sidebar .open .popup_open:before {
     content: '';
     background-position: 0 -18px;
-}
-.sidebar .popup_open a {
-    font-family: 'Fregat_bold';
-    color: #000;
-    font-size: 19px;
-    margin-left: 28px;
 }
 .sidebar .popup li a {
     display: block;
     line-height: 32px;
     text-decoration: none;
     color: #583b1c;
-    text-indent: 34px;
+    padding-left: 34px;
     width: 275px;
+    border-radius: 0 5px 5px 0;
+}
+.sidebar .new a:after {
+    content: 'new';
+    width: 40px;
+    line-height: 19px;
+    padding-bottom: 1px;
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 30px;
+    background: -webkit-linear-gradient(top, #FF0000, #E50000);
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    text-indent: 0;
+    border-radius: 2px;
 }
 .sidebar .popup li a:hover {
     background: #916E52;
