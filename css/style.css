@@ -23,16 +23,16 @@ h1 {
 h2 {
     font-size: 34px;
     color: #0385f4;
-    font-family: 'Fregat_bold';
+    font-family: 'Fregat_Bold';
 }
 h3 {
     font-size: 26px;
     color: #583b1c;
-    font-family: 'Fregat_bold';
+    font-family: 'Fregat_Bold';
 }
 h4 {
     font-size: 24px;
-    font-family: 'Fregat_bold';
+    font-family: 'Fregat_Bold';
 }
 p, a, ul, li, input, label, button, textarea {
     list-style: none;
@@ -53,7 +53,13 @@ p {
 .wrap {
    background: rgba(255,255,255,.8);
 }
-.btn_broun {
+.btn_brown,
+a.btn_brown {
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Fregat_Bold';
+    text-transform: uppercase;
+    display: inline-block;
     border: none;
     outline: none;    
     color: white;
@@ -65,13 +71,17 @@ p {
     background: -ms-linear-gradient(bottom, #3e2812 0%, #3e2812 50%, #6e5944 51%, #674f37 65%, #5f4327 80%, #583a1c 100%);
     background: linear-gradient(bottom, #3e2812 0%, #3e2812 50%, #6e5944 51%, #674f37 65%, #5f4327 80%, #583a1c 100%);
 }
-.btn_broun:hover {
+.btn_brown:hover {
     background: #452e16;
     background: -moz-linear-gradient(bottom, #f19300 0%, #f28001 50%, #f37a02 51%, #f37208 65%, #f36604 80%, #f45e03 100%);
     background: -webkit-linear-gradient(bottom, #f19300 0%, #f28001 50%, #f37a02 51%, #f37208 65%, #f36604 80%, #f45e03 100%);
     background: -o-linear-gradient(bottom, #f19300 0%, #f28001 50%, #f37a02 51%, #f37208 65%, #f36604 80%, #f45e03 100%);
     background: -ms-linear-gradient(bottom, #f19300 0%, #f28001 50%, #f37a02 51%, #f37208 65%, #f36604 80%, #f45e03 100%);
     background: linear-gradient(bottom, #f19300 0%, #f28001 50%, #f37a02 51%, #f37208 65%, #f36604 80%, #f45e03 100%);
+}
+a.btn_brown:hover,
+a.btn_brown:focus {
+    color: #fff; 
 }
 /* Header
 ------------------------------------------------------------------------------------ */
@@ -126,6 +136,9 @@ p {
     font-weight: bold;
     font-size: 16px;
 }
+.header .navbar-nav li a:focus {
+    background: none;
+}
 .header .navbar-nav li:last-child {
     margin-right: 0px;
 }
@@ -163,7 +176,7 @@ p {
 .header .contact h4 span {
     font-size: 14px;
 }
-.header .contact .btn_broun {
+.header .contact .btn_brown {
     margin-top: 25px;    
     font-size: 18px;
     padding: 5px 25px;
@@ -273,53 +286,6 @@ p {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* footer 
--------------------------------------------------------------------------------------*/
-.footer {
-    width: 100%;
-    background: white;
-    padding: 22px 0 15px;
-}
-.footer p {
-    font-size: 12px;
-    color: #000000;
-}
-.footer p a {
-    color: #f55204;
-}
-.footer .follows {
-    text-align: right;
-}
-.footer .follows a {
-    margin-left: 25px;
-}
-
-
-
-
-
-
 /* Sidebar
 ---------------------------------------------------------------------------------------*/
 .sidebar .popup {
@@ -416,7 +382,7 @@ p {
     font-family: 'Trebuchet MS';
     font-weight: bold;
     font-size: 14px;
-    margin-left: 30px;
+    margin-left: 20px;
     background: #E50000;
     background: linear-gradient(top, #FF0000, #E50000);
     background: -o-linear-gradient(top, #FF0000, #E50000);
@@ -456,7 +422,6 @@ p {
     border-right: 2px solid #CBC1BA;
     border-radius: 5px;
     position: relative;
-    padding-bottom: 15px;
     margin: auto;
     margin-bottom: 35px;
     margin-top: 30px;
@@ -471,6 +436,28 @@ p {
 }
 .sidebar_right .info h1.first {
     border-radius: 5px 5px 0 0;
+}
+.sidebar_right .info.action h1 {
+    background: #ff5d00;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMTAwJSIgeDI9IjEwMCUiIHkyPSIwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZmY1ZDAwIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmOTYwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+    background: -moz-linear-gradient(45deg,  #ff5d00 0%, #ff9600 100%);
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#ff5d00), color-stop(100%,#ff9600));
+    background: -webkit-linear-gradient(45deg,  #ff5d00 0%,#ff9600 100%);
+    background: -o-linear-gradient(45deg,  #ff5d00 0%,#ff9600 100%);
+    background: -ms-linear-gradient(45deg,  #ff5d00 0%,#ff9600 100%);
+    background: linear-gradient(45deg,  #ff5d00 0%,#ff9600 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5d00', endColorstr='#ff9600',GradientType=1 );
+}
+.sidebar_right .info.action .info_body {
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+.sidebar_right .info.action .info_body a {
+    margin-bottom: 15px;
+}
+.sidebar_right .info.action:before {
+    content: '';
+    border-bottom-color: #FF7D00;
 }
 .sidebar_right .info:before {
     content: '';
@@ -487,26 +474,81 @@ p {
     float: right;
     padding-right: 25px;
 }
+.sidebar_right .info p {
+    color: #000;
+    font-size: 16px;
+    line-height: 20px;
+}
+.sidebar_right .info p span {
+    color: #f46103;
+}
+.sidebar_right .info a {
+    color: #f46103;
+    display: inline-block;
+    font-size: 16px;
+}
 .sidebar_right .info table {
     width: 100%;
-    margin-top: 12px;
+    margin-top: 7px;
+    margin-bottom: 15px;
 }
 .sidebar_right .info table td {
     font-size: 16px;
+    padding-top: 10px;
 }
 .sidebar_right .info table td:first-child {
     font-family: 'Fregat_regular';
     color: #525252;
-    padding-left: 15px;
+    color: #000;
 }
 .sidebar_right .info table td:nth-child(2) {
-    font-family: 'Fregat_bold';
+    font-family: 'Fregat_Bold';
     color: #f46103;
     text-align: right;
-    padding-right: 15px;
-    height: 32px;
 }
-
+.sidebar_right .info .btn_container {
+    border-top: 1px solid #E8E8E8;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.sidebar_right .info .info_body {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.sidebar_right .info .cart {
+    margin-top: 4px;
+}
+.sidebar_right .info .cart:after {
+    content: url(../img/cart_arrow.png);
+    margin-left: 12px;
+}
+.sidebar_right .info .btn_brown {
+    width: 85px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    color: #fff;
+}
+/* footer 
+-------------------------------------------------------------------------------------*/
+.footer {
+    width: 100%;
+    background: white;
+    padding: 22px 0 15px;
+}
+.footer p {
+    font-size: 12px;
+    color: #000000;
+}
+.footer p a {
+    color: #f55204;
+}
+.footer .follows {
+    text-align: right;
+}
+.footer .follows a {
+    margin-left: 25px;
+}
 /* media
 ---------------------------------------------------------------------------------------*/
 @media screen and (min-width: 1230px) {
@@ -532,6 +574,16 @@ p {
         height: 68px;
         line-height: 68px;
     }
+    .sidebar .popup_open {
+        padding-left: 15px;
+    }
+    .sidebar .popup li a {
+        padding-left: 20px;
+        width: 100%;
+    }
+    .sidebar_right .info {
+        width: 100%;
+    }
 }
 @media screen and (max-width: 1229px) {
     .header .contact h3 {
@@ -548,6 +600,10 @@ p {
     .header .navbar-nav li a .img {
         height: 62px;
         line-height: 62px;
+    }
+    .sidebar .new a:after {
+        content: 'new';
+        margin-left: 10px;
     }
 }
 @media screen and (max-width: 1199px) {
@@ -569,6 +625,19 @@ p {
     .header .contact {
         text-align: center;
     }
+    .sidebar_right .info {
+        width: 276px;
+    }
+    .sidebar {
+        width: 275px;
+    }
+    .sidebar .popup_open {
+        padding-left: 28px;
+    }
+    .sidebar .popup li a {
+        padding-left: 34px;
+        width: 100%;
+    }
 }
 @media screen and (max-width: 767px) {
     .header .contact {
@@ -577,7 +646,7 @@ p {
     .header .contact h3 {
         font-size: 26px;
     }
-    .header .contact .btn_broun {
+    .header .contact .btn_brown {
         font-size: 18px;
     }
     .header .navbar-nav {
