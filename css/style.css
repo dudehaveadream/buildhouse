@@ -1264,6 +1264,60 @@ nav.pages .last_page {
 }
 /* Order card
 -------------------------------------------------------------------------------------*/
+.sliderkit,
+.photosgallery-std .sliderkit-panel,
+.photosgallery-std .sliderkit-nav {
+    width: 260px;
+}
+.sliderkit {
+    height: 537px;
+}
+.photosgallery-std .sliderkit-nav {
+    background: none;
+    padding-left: 0;
+}
+.sliderkit .sliderkit-nav-clip {
+    margin-left: 0;
+}
+.photosgallery-std .sliderkit-nav-clip ul li a {
+    width: 57px;
+    height: 67px;
+    border: 1px solid #E1E1E1;
+    line-height: 63px;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+.photosgallery-std .sliderkit-nav-clip ul li a img {
+    vertical-align: middle;
+}
+.photosgallery-std .sliderkit-panel {
+    height: 446px;
+    text-align: center;
+    line-height: 446px;
+    border: 1px solid #E1E1E1;
+    background: #fff;
+}
+.photosgallery-std .sliderkit-panel img {
+    vertical-align: middle;
+}
+.photosgallery-std .sliderkit-nav .sliderkit-nav-next {
+    right: 1px;
+    top: 50%;
+    margin-top: -16px;
+}
+.photosgallery-std .sliderkit-nav .sliderkit-nav-next a {
+    width: 4px;
+    height: 32px;
+    background: url(../img/order/arrow.png);
+    outline: none;
+}
+.photosgallery-std .sliderkit-nav .sliderkit-nav-next a,
+.photosgallery-std .sliderkit-nav .sliderkit-nav-next a:focus {
+    background-position: 0 0;
+}
+.photosgallery-std .sliderkit-nav .sliderkit-nav-next a:hover {
+    background-position: 0 -32px;
+}
 .order_card {
     padding: 40px 65px 125px 20px;
     background: white;

@@ -9,9 +9,10 @@
     <!-- Bootstrap -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/sliderkit-core.css" media="screen, projection" />
+    <link rel="stylesheet" type="text/css" href="css/sliderkit-demos.css" media="screen, projection" />
     <link href="css/style.css" rel="stylesheet">
     <link href="css/fonts.css" rel="stylesheet">
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -84,9 +85,56 @@
           </div>
           <div class="order_card clearfix">
             <div class="slider">
-              <div class="order_example">
-                <img src="img/order_card.jpg">
-              </div>
+              <!-- Start photosgallery-std -->
+        <div class="sliderkit photosgallery-std">
+          <div class="sliderkit-nav">
+            <div class="sliderkit-nav-clip">
+              <ul>
+                <li><a href="#" rel="nofollow" title="[link title]"><img src="img/order/item1_small.jpg"></a></li>
+                <li><a href="#" rel="nofollow" title="[link title]"><img src="img/order/item1_small.jpg"></a></li>
+                <li><a href="#" rel="nofollow" title="[link title]"><img src="img/order/item1_small.jpg"></a></li>
+                <li><a href="#" rel="nofollow" title="[link title]"><img src="img/order/item1_small.jpg"></a></li>
+                <li><a href="#" rel="nofollow" title="[link title]"><img src="img/order/item1_small.jpg"></a></li>
+                <li><a href="#" rel="nofollow" title="[link title]"><img src="img/order/item1_small.jpg"></a></li>
+                <li><a href="#" rel="nofollow" title="[link title]"><img src="img/order/item1_small.jpg"></a></li>
+                <li><a href="#" rel="nofollow" title="[link title]"><img src="img/order/item1_small.jpg"></a></li>
+                <li><a href="#" rel="nofollow" title="[link title]"><img src="img/order/item1_small.jpg"></a></li>
+              </ul>
+            </div>
+            <div class="sliderkit-btn sliderkit-nav-btn sliderkit-nav-next"><a rel="nofollow" href="#" title="Next line"></a></div>
+          </div>
+          <div class="sliderkit-panels">
+            
+            <div class="sliderkit-panel">
+              <img src="img/order/item1.jpg">
+            </div>
+            <div class="sliderkit-panel">
+              <img src="img/order/item2.jpg">
+            </div>
+            <div class="sliderkit-panel">
+              <img src="img/order/item3.jpg">
+            </div>
+            <div class="sliderkit-panel">
+              <img src="img/order/item4.jpg">
+            </div>
+            <div class="sliderkit-panel">
+              <img src="img/order/item1.jpg">
+            </div>
+            <div class="sliderkit-panel">
+              <img src="img/order/item2.jpg">
+            </div>
+            <div class="sliderkit-panel">
+              <img src="img/order/item3.jpg">
+            </div>
+            <div class="sliderkit-panel">
+              <img src="img/order/item4.jpg">
+            </div>
+            <div class="sliderkit-panel">
+              <img src="img/order/item1.jpg">
+            </div>
+          </div>
+        </div>
+        <!-- // end of photosgallery-std -->
             </div>
             <div class="right_content clearfix">
 
@@ -174,5 +222,18 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
+    <script type="text/javascript" src="js/jquery.sliderkit.1.4.js"></script>
+    <script type="text/javascript">
+      jQuery(window).load(function(){ //jQuery(window).load() must be used instead of jQuery(document).ready() because of Webkit compatibility        
+        
+        // Photo gallery > Standard
+        jQuery(".photosgallery-std").sliderkit({
+          shownavitems:4,
+          auto: false,
+          //navfx:"none",
+          panelbtnshover:true
+        });
+      }); 
+    </script>
   </body>
 </html>
