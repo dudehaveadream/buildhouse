@@ -892,6 +892,128 @@ a.btn_brown:focus {
     background: #FF0346;
     color: #fff;
 }
+/* action
+------------------------------------------------------------------------------------*/
+.action {
+    margin-bottom: 40px;
+}
+.action .proposition {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    background: white;
+    padding: 25px 100px 45px 50px;
+    box-shadow: 1px 2px 0 rgba(79,79,79,.1);
+    -web-box-shadow: 1px 2px 0 rgba(79,79,79,.1);
+    -moz-box-shadow: 1px 2px 0 rgba(79,79,79,.1);
+    -o-box-shadow: 1px 2px 0 rgba(79,79,79,.1);
+    -ms-box-shadow: 1px 2px 0 rgba(79,79,79,.1);
+}
+.action .proposition h1 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #f46103;
+}
+.action .proposition h1 img {
+    margin-top: -5px;
+    margin: 15px;
+}
+.action .proposition .pro {
+    margin-bottom: 30px;
+}
+.action .proposition .pro span {
+    font-family: 'Fregat_bold';
+}
+.action .proposition .cpmplect {
+    font-size: 16px;
+}
+.action .proposition ul {
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+.action .proposition ul li {
+    list-style-type: disc;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.action .proposition .for_action {
+    font-family: 'Fregat_bold';
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.action .proposition .describe_action {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;  
+}
+
+.action .block {
+    padding-right: 35px;
+    padding: 20px 25px 40px 40px; 
+    background: white;
+    box-shadow: 1px 2px 0 rgba(79,79,79,.1);
+    -web-box-shadow: 1px 2px 0 rgba(79,79,79,.1);
+    -moz-box-shadow: 1px 2px 0 rgba(79,79,79,.1);
+    -o-box-shadow: 1px 2px 0 rgba(79,79,79,.1);
+    -ms-box-shadow: 1px 2px 0 rgba(79,79,79,.1);
+}
+.action .block h1 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #f46103;
+}
+.action .block .block_price h1 div {
+    float: left;
+    height: 100%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.action .block h1 img {
+    margin-top: -5px;
+}
+.action .block .example {
+    float: left;
+    margin-bottom: 20px;
+}
+.action .block .example div {
+    padding: 2px;
+    border: 1px solid #f2e5c5;
+    width: 259px;
+    text-align: center;
+}
+.action .block .example img {
+    width: auto;
+}
+.action .block .block_price {
+    width: 450px;
+    float: right;
+}
+
+.action .block .component {
+    margin: 20px 0px;
+}
+.action .block .component p {
+    margin-right: 35px;
+    float: left;
+    font-family: 'Fregat_bold';
+}
+.action .block .component a {
+    font-size: 18px;
+    color: white;
+    background: #f55204;
+    padding: 10px 15px 10px;
+    font-family: 'Fregat_bold';
+}
+.action .block .component a:hover {
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+
+
 /* footer 
 -------------------------------------------------------------------------------------*/
 .footer {
@@ -958,6 +1080,16 @@ a.btn_brown:focus {
     }
     .catalog ul li:nth-child(2n) {
         margin-right: 0;
+    }
+    .example {
+        width: 100%;
+        text-align: center;
+    }
+    .example div {
+        margin: auto;
+    }
+    .action .block .block_price {
+        width: 100%;
     }
 }
 @media screen and (max-width: 1229px) {
@@ -1042,6 +1174,13 @@ a.btn_brown:focus {
     .catalog ul li:nth-child(4n) {
         margin-right: 0;
     }
+    .example {
+        width: auto;
+        text-align: left;
+    }
+    .action .block .block_price {
+        width: 590px;
+    }
 }
 @media screen and (max-width: 991px) {
     .catalog ul {
@@ -1065,6 +1204,17 @@ a.btn_brown:focus {
     }
     .partners .list:nth-child(5n) {
         clear: none;
+    }
+    .example {
+        width: 100%;
+        text-align: center;
+    }
+    .example {
+        width: 100%;
+        text-align: center;
+    }
+    .action .block .block_price {
+        width: 100%;
     }
 }
 @media screen and (max-width: 767px) {
@@ -1132,6 +1282,14 @@ a.btn_brown:focus {
     .catalog ul li:nth-child(2n) {
         margin-right: 0;
     }
+    .action .proposition {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .block {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 }
 @media screen and (max-width: 486px) {
     .catalog ul {
@@ -1147,6 +1305,27 @@ a.btn_brown:focus {
         padding-left: 0;
         text-align: center;
         margin-top: 25px;
+    }
+    .action .block .component p {
+        font-size: 14px;
+        margin-right: 10px;
+    }
+    .action .block .component a {
+        font-size: 14px;
+    }
+    .action .block .block_price h1 div {
+        margin-bottom: 60px;
+    }
+    .block .example {
+        width: 100%;
+    }
+    .block .example div img {
+        width: 100% !important;
+    }
+}
+@media screen and (max-width: 350px) {
+    .block .example div {
+        width: 210px !important;
     }
 }
 @media screen and (max-width: 335px) {
