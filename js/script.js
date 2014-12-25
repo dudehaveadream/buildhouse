@@ -8,4 +8,10 @@ $(document).ready(function(){
 		$(this).next().parents('.sidebar > li').removeClass('empty');
 	})
 	$('.sidebar_right .info').find('h1:first').addClass('first')
+
+	var sbula = $(".chose");
+    sbula.click(function(e) {
+        sbula.removeClass("active").not(sbula).add(this).toggleClass("active");
+        e.preventDefault();
+    });
 });

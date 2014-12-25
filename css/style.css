@@ -1372,7 +1372,8 @@ nav.pages .last_page {
     padding: 2px;
     float: left;
     margin-right: 5px;
-    margin-top: 5px; 
+    margin-top: 5px;
+    cursor: pointer; 
 }
 .order_card .botom_order .chose img {
     width: 36;
@@ -1766,12 +1767,6 @@ nav.pages .last_page {
     .order_card .right_content .botom_order {
         text-align: center;
         width: 100%;
-    }
-    .order_card .right_content .botom_order .variant {
-        width: 50%;
-    }
-    .order_card .right_content .botom_order .number {
-        width: 50%;
     }
     .order_card .right_content .botom_order button {
         float: none;
