@@ -1271,7 +1271,7 @@ nav.pages .last_page {
     .example div {
         margin: auto;
     }
-    .action .block .block_price {
+    .action_container .block .block_price {
         width: 100%;
     }
 }
@@ -1356,7 +1356,7 @@ nav.pages .last_page {
         width: auto;
         text-align: left;
     }
-    .action .block .block_price {
+    .action_container .block .block_price {
         width: 590px;
     }
 }
@@ -1391,7 +1391,7 @@ nav.pages .last_page {
         width: 100%;
         text-align: center;
     }
-    .action .block .block_price {
+    .action_container .block .block_price {
         width: 100%;
     }
 }
@@ -1460,7 +1460,7 @@ nav.pages .last_page {
     .catalog ul li:nth-child(2n) {
         margin-right: 0;
     }
-    .action .proposition {
+    .action_container .proposition {
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -1484,14 +1484,14 @@ nav.pages .last_page {
         text-align: center;
         margin-top: 25px;
     }
-    .action .block .component p {
+    .action_container .block .component p {
         font-size: 14px;
         margin-right: 10px;
     }
-    .action .block .component a {
+    .action_container .block .component a {
         font-size: 14px;
     }
-    .action .block .block_price h1 div {
+    .action_container .block .block_price h1 div {
         margin-bottom: 60px;
     }
     .block .example {
