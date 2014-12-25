@@ -388,7 +388,7 @@ a.btn_brown:focus {
 }
 /* Delivery
 -------------------------------------------------------------------------------------------------------------------*/
-.delivery {    
+.delivery {
     margin-top: 45px;
     background: none;
 }
@@ -434,7 +434,7 @@ a.btn_brown:focus {
     display: block;
     margin-bottom: 20px;
     padding-left: 5px;
-    line-height: 12px;    
+    line-height: 12px;
 }
 .partners a {
     text-decoration: underline;
@@ -689,7 +689,7 @@ a.btn_brown:focus {
     border-radius: 5px 5px 0 0;
 }
 .sidebar_right .info.action h1 {
-    background: #ff5d00;    
+    background: #ff5d00;
     background: -moz-linear-gradient(45deg,  #ff5d00 0%, #ff9600 100%);
     background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#ff5d00), color-stop(100%,#ff9600));
     background: -webkit-linear-gradient(45deg,  #ff5d00 0%,#ff9600 100%);
@@ -779,7 +779,7 @@ a.btn_brown:focus {
     font-size: 16px;
     color: #fff;
 }
-/* Catalog 
+/* Catalog
 -------------------------------------------------------------------------------------*/
 .catalog ul {
     padding-left: 36px;
@@ -892,7 +892,170 @@ a.btn_brown:focus {
     background: #FF0346;
     color: #fff;
 }
-/* footer 
+
+/* Cart
+-------------------------------------------------------------------------------------*/
+.cart_container .content_inner {
+    margin-bottom: 40px;
+}
+.cart_container .main_cart a.btn_brown {
+    text-transform: lowercase;
+    font-size: 16px;
+    font-family: 'Fregat_regular';
+    padding: 6px 25px;
+}
+.cart_container .main_cart a.accept {
+    float: right;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.cart_container .total_container {
+    padding: 10px 0;
+    position: relative;
+}
+.cart_container .total_container p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+.cart_container .total_container .btn_back_container {
+    float: left;
+    margin-top: 95px;
+}
+.cart_container .total_container a.back {
+    background: #927054;
+    background: -moz-linear-gradient(bottom, #927054 0%, #ae9581 50%, #bfad9c 51%, #c6b4a7 65%, #cbbcb0 80%, #cdc0b5 100%);
+    background: -webkit-linear-gradient(bottom, #927054 0%, #ae9581 50%, #bfad9c 51%, #c6b4a7 65%, #cbbcb0 80%, #cdc0b5 100%);
+    background: -o-linear-gradient(bottom, #927054 0%, #ae9581 50%, #bfad9c 51%, #c6b4a7 65%, #cbbcb0 80%, #cdc0b5 100%);
+    background: -ms-linear-gradient(bottom, #927054 0%, #ae9581 50%, #bfad9c 51%, #c6b4a7 65%, #cbbcb0 80%, #cdc0b5 100%);
+    background: linear-gradient(bottom, #927054 0%, #ae9581 50%, #bfad9c 51%, #c6b4a7 65%, #cbbcb0 80%, #cdc0b5 100%);
+}
+.cart_container .total_container a.back:hover {
+    background: #452e16;
+    background: -moz-linear-gradient(bottom, #f19300 0%, #f28001 50%, #f37a02 51%, #f37208 65%, #f36604 80%, #f45e03 100%);
+    background: -webkit-linear-gradient(bottom, #f19300 0%, #f28001 50%, #f37a02 51%, #f37208 65%, #f36604 80%, #f45e03 100%);
+    background: -o-linear-gradient(bottom, #f19300 0%, #f28001 50%, #f37a02 51%, #f37208 65%, #f36604 80%, #f45e03 100%);
+    background: -ms-linear-gradient(bottom, #f19300 0%, #f28001 50%, #f37a02 51%, #f37208 65%, #f36604 80%, #f45e03 100%);
+    background: linear-gradient(bottom, #f19300 0%, #f28001 50%, #f37a02 51%, #f37208 65%, #f36604 80%, #f45e03 100%);
+}
+.cart_container .total_container .total_inner {
+    float: right;
+    border: 1px solid #d3d3d3;
+    padding: 20px 30px;
+}
+.cart_container .total_container .total_inner p.itog {
+    float: left;
+}
+.cart_container .total_container .total_inner p.summ {
+    background: #ff5b00;
+    font-size: 20px;
+    color: #fff;
+    padding: 0 8px;
+}
+.cart_container .total_container .total_inner .total {
+    padding-left: 100px;
+}
+
+
+.cart_container table.cart {
+    width: 100%;
+}
+.cart_container table.cart tr td {
+    padding: 12px 3px;
+}
+.cart_container table.cart tr td .clearfix {
+    float: left;
+}
+.cart_container table.cart tr td .image_container {
+    margin-right: 15px;
+    padding: 5px 8px;
+    border: 1px solid #e5e1de;
+    float: left;
+}
+.cart_container table.cart tr td .image_container img {
+    width: 100%;
+}
+.cart_container table.cart tr td .link {
+    display: table;
+    min-height: 105px;
+}
+.cart_container table.cart tr td .link a {
+    color: #000;
+}
+.cart_container table.cart tr td .link a:hover {
+    color: #ff5d00;
+}
+.cart_container table.cart tr td .link .link_inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+.cart_container table.cart tr td a.close {
+    width: 26px;
+    height: 26px;
+    background: url(../img/close.png) no-repeat;
+    opacity: .7;
+}
+.cart_container table.cart tr td a.close:hover {
+    background-position: 0 -29px;
+    opacity: 1;
+}
+.cart_container table.cart thead tr td {
+    color: #919191;
+}
+.cart_container table.cart tbody tr td {
+    border-top: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+    font-size: 16px;
+}
+.cart_container table.cart tbody tr td:last-child {
+    border-right: none;
+}
+.cart_container table.cart tbody tr:last-child td {
+    border-bottom: 2px solid #916e52;
+}
+.cart_container table.cart tbody tr td.count {
+    width: 70px;
+}
+.cart_container table.cart tbody tr td.summ {
+    font-family: 'Fregat_bold';
+}
+.cart_container table.cart tbody tr td input {
+    width: 100%;
+    border: none;
+    background: #eeeeee;
+    padding: 0 8px;
+}
+
+.cart_container .presonal_data {
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+.cart_container .presonal_data form {
+    width: 290px;
+}
+.cart_container .presonal_data form label {
+    color: #919191;
+    margin-bottom: 8px;
+}
+.cart_container .presonal_data form label span {
+    color: #ff5b00;
+    margin-left: 4px;
+}
+.cart_container .presonal_data form input[type="text"] {
+    width: 100%;
+    height: 25px;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    border: 1px solid #d8d8d8;
+}
+.cart_container .presonal_data form input[type="submit"] {
+    text-transform: lowercase;
+    font-size: 16px;
+    font-family: 'Fregat_regular';
+    padding: 6px 25px;
+    margin-top: 20px;
+}
+
+/* Footer
 -------------------------------------------------------------------------------------*/
 .footer {
     width: 100%;
@@ -992,7 +1155,7 @@ a.btn_brown:focus {
     .header .navbar-nav li a {
         height: 123px;
         width: 123px;
-        font-size: 16px;        
+        font-size: 16px;
     }
     .advantage ul li {
         width: 50%;
@@ -1106,7 +1269,6 @@ a.btn_brown:focus {
         display: block;
         margin: auto;
         left: 0;
-
     }
     .header .navbar-collapse {
         padding-top: 25px;
@@ -1132,12 +1294,6 @@ a.btn_brown:focus {
     .catalog ul li:nth-child(2n) {
         margin-right: 0;
     }
-}
-@media screen and (max-width: 486px) {
-    .catalog ul {
-        width: 202px;
-        margin: auto;
-    }
     .contacts .contacts_team .image_container {
         float: none;
         text-align: center;
@@ -1147,6 +1303,60 @@ a.btn_brown:focus {
         padding-left: 0;
         text-align: center;
         margin-top: 25px;
+    }
+    .cart_container table.cart tr td  .clearfix {
+        width: 100%;
+    }
+    .cart_container table.cart tr td .image_container {
+        margin: auto;
+        float: none;
+        width: 60px;
+    }
+    .cart_container table.cart tr td .link {
+        width: 100%;
+        min-height: 50px;
+        text-align: center;
+    }
+    .cart_container .total_container {
+        padding-top: 15px;
+    }
+    .cart_container .total_container .total_inner {
+        float: none;
+
+    }
+    .cart_container .total_container .total_inner .total {
+        padding-left: 50%;
+    }
+    .cart_container .total_container .btn_back_container {
+        float: none;
+        margin: 15px 0 0;
+        text-align: center;
+    }
+    .cart_container .btn_accept_container {
+        text-align: center;
+    }
+    .cart_container .btn_accept_container a.accept {
+        float: none;
+    }
+}
+@media screen and (max-width: 486px) {
+    .catalog ul {
+        width: 202px;
+        margin: auto;
+    }
+    .cart_container .content_inner {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .cart_container table.cart tbody tr td {
+        font-size: 13px;
+    }
+    .cart_container .presonal_data form {
+        width: 100%;
+    }
+    .cart_container .presonal_data .title h5 {
+        padding: 9px 10px;
+        font-size: 18px;
     }
 }
 @media screen and (max-width: 335px) {
