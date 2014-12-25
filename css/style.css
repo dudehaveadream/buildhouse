@@ -1325,6 +1325,7 @@ nav.pages .last_page {
 .order_card .slider {
     width: 260px;
     float: left;
+    margin: 20px;
 }
 .order_card .order_example {
     border: 1px solid #e0e0e0;
@@ -1337,9 +1338,12 @@ nav.pages .last_page {
 }
 .order_card .right_content {
     width: 800px;
-    float: right;
-    padding-bottom: 20px;
+    float: left;    
+}
+.order_card .right_content .all_desc {
     border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 .order_card .right_content .first_describe {
     width: 290px;
@@ -1407,11 +1411,62 @@ nav.pages .last_page {
     font-size: 13px;
     line-height: 16px;
 }
-.order_card .bott_order {
-    width: 540px;
+.order_card .botom_order {
+    width: 440px;
     float: left;
 }
-
+.order_card .botom_order .variant {
+    width: 140px;
+    float: left;
+}
+.order_card .botom_order .chose {
+    width: 40px;
+    height: 37px;
+    border: 1px solid #e0e0e0;
+    padding: 2px;
+    float: left;
+    margin-right: 5px;
+    margin-top: 5px; 
+}
+.order_card .botom_order .chose img {
+    width: 36;
+    height: 31;
+}
+.order_card .botom_order .chose:hover {
+    border: 1px solid #f45d03;
+}
+.order_card .botom_order .chose.active {
+    border: 1px solid #f45d03;
+}
+.order_card .botom_order .number {
+    width: 85px;
+    float: left;
+}
+.order_card .botom_order .number input {
+    height: 35px;
+    width: 45px;
+    outline: none;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 5px;
+}
+.order_card .botom_order .number input::-webkit-input-placeholder {
+    color: #000000;
+}
+.order_card .botom_order .number input:-moz-input-placeholder {
+    color: #000000;
+}
+.order_card .botom_order .number input:-o-input-placeholder {
+    color: #000000;
+}
+.order_card .botom_order .number input:-ms-input-placeholder {
+    color: #000000;
+}
+.order_card .botom_order button {
+    margin-top: 20px;
+    font-size: 16px;
+    padding: 10px 20px 8px;
+}
 /* Footer
 -------------------------------------------------------------------------------------*/
 .footer {
@@ -1488,6 +1543,18 @@ nav.pages .last_page {
     }
     .action_container .block .block_price {
         width: 100%;
+    }
+    .order_card .right_content {
+        width: 450px;
+    }
+    .order_card .right_content .first_describe {
+        width: 100%;
+    }
+    .order_card .right_content .first_describe .proposal {
+        margin-bottom: 20px;
+    }
+    .order_card .right_content .second_describe {
+        padding-left: 0px;
     }
 }
 @media screen and (max-width: 1229px) {
@@ -1609,6 +1676,14 @@ nav.pages .last_page {
     .action_container .block .block_price {
         width: 100%;
     }
+    .order_card .slider {
+        margin: auto;
+        float: none;
+    }
+    .order_card .right_content {
+        float: none;
+        margin: auto;
+    }
 }
 @media screen and (max-width: 767px) {
     .header .contact {
@@ -1724,6 +1799,40 @@ nav.pages .last_page {
     }
     .cart_container .btn_accept_container a.accept {
         float: none;
+    }
+}
+@media screen and (max-width: 600px) {
+    .order_card {
+        padding: 10px;
+    }
+    .order_card .slider {
+        width: 260px;
+    }
+    .order_card .right_content {
+        width: 100%;
+    }
+    .order_card .right_content .first_describe {
+        width: 100%;
+    }
+    .order_card .right_content .foto {
+        margin-bottom: 10px;
+    }
+    .order_card .right_content .botom_order {
+        text-align: center;
+        width: 100%;
+    }
+    .order_card .right_content .botom_order .variant {
+        width: 50%;
+    }
+    .order_card .right_content .botom_order .number {
+        width: 50%;
+    }
+    .order_card .right_content .botom_order button {
+        float: none;
+    }
+    .order_tit h5 {
+        font-size: 16px;
+        height: 40px;
     }
 }
 @media screen and (max-width: 486px) {
