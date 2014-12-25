@@ -36,6 +36,11 @@ h4 {
 h5 {
     font-size: 20px;
 }
+h6 {
+    color: #909090;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
 div.title h5 {
     display: inline-block;
     color: #fff;
@@ -1011,7 +1016,103 @@ a.btn_brown:focus {
     text-decoration: none;
     opacity: 0.8;
 }
+/* Order card
+-------------------------------------------------------------------------------------*/
+.order_card {
+    padding: 40px 65px 125px 20px;
+    background: white;
+}
+.order_card .slider {
+    width: 260px;
+    float: left;
+}
+.order_card .order_example {
+    border: 1px solid #e0e0e0;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+.order_card .order_example img {
+    margin: auto;
+    display: block; 
+}
+.order_card .right_content {
+    width: 800px;
+    float: right;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.order_card .right_content .first_describe {
+    width: 290px;
+    float: left;
+}
+.order_card .right_content .first_describe .name {
+    font-family: 'Fregat_bold';
+    color: #332e25;
+    margin-bottom: 10px;
+}
+.order_card .right_content .first_describe .size {
+    font-size: 16px;
+    color: #332e25;
+    line-height: 17px;
+}
+.order_card .right_content .first_describe .proposal {
+     border: 1px solid #e0e0e0;
+     padding: 35px 10px 30px 30px;
+     margin-top: 55px;
+}
+.order_card .right_content .proposal table tr td p {
+    font-size: 14px;
+}
+.order_card .right_content .proposal table tr td .canvas {
+    background: #ededed;
+    margin-right: 10px;
+}
+.order_card .right_content .proposal table tr td .set {
+    background: #f45b04;
+    color: white;
+}
+.order_card .right_content .proposal table tr td .canvas,
+.order_card .right_content .proposal table tr td .set {
+    font-size: 20px;
+    padding: 5px 9px 3px;
+}
 
+.order_card .right_content .second_describe {
+    float: left;
+    padding-left: 60px;
+}
+.order_card .right_content .second_describe .order_list {
+    font-size: 16px;
+    line-height: 19px;
+}
+.order_card .right_content .second_describe h6.compl {
+    margin-top: 30px;
+}
+.order_card .right_content .second_describe .fotos .foto {
+    width: 190px;
+    float: left;
+    margin-right: 50px;
+}
+.order_card .right_content .second_describe .fotos .foto:last-child {
+    margin-right: 0px;
+}
+.order_card .right_content .second_describe .fotos .foto div {
+    width: 55px;
+    height: 65px;
+    border: 1px solid #e0e0e0;
+    margin-right: 15px;
+    float: left;
+}
+.order_card .right_content .second_describe .fotos p {
+    font-size: 13px;
+    line-height: 16px;
+}
+
+
+.order_card .bott_order {
+    width: 540px;
+    float: left;
+}
 
 
 /* footer 
