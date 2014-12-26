@@ -11,6 +11,8 @@ body {
     font-family: 'Fregat_regular';
     color: #111111;
     background: url(../img/body_bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
@@ -394,7 +396,7 @@ a.btn_brown:focus {
 /* Delivery
 -------------------------------------------------------------------------------------------------------------------*/
 .delivery {
-    margin-top: 45px;
+    margin-top: 25px;
     background: none;
 }
 .delivery h1 {
@@ -1049,6 +1051,7 @@ nav.pages .last_page {
 }
 .cart_container table.cart tr td {
     padding: 12px 3px;
+    word-break: break-all;
 }
 .cart_container table.cart tr td .clearfix {
     float: left;
@@ -1319,7 +1322,7 @@ nav.pages .last_page {
     background-position: 0 -32px;
 }
 .order_card {
-    padding: 40px 65px 125px 20px;
+    padding: 40px 0 125px 20px;
     background: white;
 }
 .order_card .slider {
@@ -1360,20 +1363,31 @@ nav.pages .last_page {
     line-height: 17px;
 }
 .order_card .right_content .first_describe .proposal {
-     border: 1px solid #e0e0e0;
-     padding: 35px 10px 30px 30px;
-     margin-top: 55px;
+    border: 1px solid #e0e0e0;
+    width: 290px;
+    height: 123px;
+    margin-top: 55px;
+}
+.order_card .right_content .proposal table {
+    height: 123px;
+    width: 290px;
+    text-align: center;
+}
+.order_card .right_content .proposal table tr td div {
+    display: inline-block;
+    text-align: left;
 }
 .order_card .right_content .proposal table tr td p {
     font-size: 14px;
 }
 .order_card .right_content .proposal table tr td .canvas {
     background: #ededed;
-    margin-right: 10px;
+    display: inline-block;
 }
 .order_card .right_content .proposal table tr td .set {
     background: #f45b04;
     color: white;
+    display: inline-block;
 }
 .order_card .right_content .proposal table tr td .canvas,
 .order_card .right_content .proposal table tr td .set {
@@ -1390,12 +1404,16 @@ nav.pages .last_page {
     line-height: 19px;
 }
 .order_card .right_content .second_describe h6.compl {
-    margin-top: 30px;
+    margin-top: 45px;
+}
+.order_card .right_content .second_describe .fotos {
+    padding-top: 5px;
 }
 .order_card .right_content .second_describe .fotos .foto {
     width: 190px;
     float: left;
     margin-right: 50px;
+    margin-bottom: 5px;
 }
 .order_card .right_content .second_describe .fotos .foto:last-child {
     margin-right: 0px;
@@ -1490,9 +1508,9 @@ nav.pages .last_page {
 }
 /* media
 ---------------------------------------------------------------------------------------*/
-@media screen and (min-width: 1230px) {
+@media screen and (min-width: 1330px) {
     .wrap {
-        width: 1200px;
+        width: 1300px;
     }
 }
 @media screen and (min-width: 1675px) {
@@ -1558,7 +1576,7 @@ nav.pages .last_page {
         padding-left: 0px;
     }
 }
-@media screen and (max-width: 1229px) {
+@media screen and (max-width: 1329px) {
     .header .contact h3 {
         font-size: 24px;
     }
@@ -1580,6 +1598,19 @@ nav.pages .last_page {
     }
     .catalog ul li:nth-child(2n) {
         margin-right: 0;
+    }
+    .order_card .right_content {
+        width: 390px;
+    }
+    .order_card .botom_order {
+        width: 390px;
+    }
+    .order_card .botom_order button {
+        float: left;
+        clear: left;
+    }
+    .partners .list img {
+        width: 100%;
     }
 }
 @media screen and (max-width: 1199px) {
@@ -1641,6 +1672,16 @@ nav.pages .last_page {
     }
     .action_container .block .block_price {
         width: 590px;
+    }
+    div.title {
+        margin-top: 50px;
+    }
+    div.title_gray {
+        margin-top: 0;
+    }
+
+    .partners .list img {
+        width: auto;
     }
 }
 @media screen and (max-width: 991px) {
@@ -1768,6 +1809,13 @@ nav.pages .last_page {
         text-align: center;
         margin-top: 25px;
     }
+    .cart_container table.cart tbody tr td.count {
+        width: 35px;
+    }
+    .cart_container table.cart tbody tr td.count input {
+        padding: 0;
+        text-align: center;
+    }
     .cart_container table.cart tr td  .clearfix {
         width: 100%;
     }
@@ -1864,6 +1912,10 @@ nav.pages .last_page {
     }
     .block .example div img {
         width: 100% !important;
+    }
+    .order_card .right_content .first_describe .proposal,
+    .order_card .right_content .first_describe .proposal table {
+        width: 100%;
     }
 }
 @media screen and (max-width: 350px) {
