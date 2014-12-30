@@ -14,6 +14,9 @@ $(document).ready(function(){
 	$('.sidebar_open').click(function(){
 		$('.sidebar').slideDown();
 	})
+	if ($(window).width() < 1213) {
+		$('.sidebar').hide();
+	}
 	$('.sidebar_right .info').find('h1:first').addClass('first')
 	var sbula = $(".chose");
     sbula.click(function(e) {
@@ -22,7 +25,7 @@ $(document).ready(function(){
     });
 });
 $(window).resize(function(){
-	if ($(window).width() > 991) {
+	if ($(window).width() > 1212) {
 		$('.sidebar').show();
 	}
 })
