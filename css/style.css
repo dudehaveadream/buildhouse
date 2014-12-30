@@ -135,6 +135,7 @@ a.btn_brown:focus {
     padding: 25px 0 0;
     background: url(../img/header_bottom.png) repeat-x bottom;
     margin-bottom: 45px;
+    position: relative;
 }
 .header .logo {
     z-index: 1;
@@ -144,6 +145,7 @@ a.btn_brown:focus {
 }
 .header .logo img {
     margin-top: 25px;
+    width: 100%;
 }
 .header .navbar {
     margin-bottom: 0;
@@ -690,13 +692,22 @@ a.btn_brown:focus {
     background: #916E52;
     color: #fff;
 }
+
+.sidebar_left {
+    position: relative;
+    padding-bottom: 40px;
+}
 .sidebar_left .cart_link {
-    /*    float: right;*/
-    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 15px;
     border-radius: 50%;
+    margin: 3px;
+    border: none;
 }
 .sidebar_left .cart_link:hover {
     border: 3px solid #ff6513;
+    margin: 0;
 }
 
 /* Sidebar right
@@ -1692,16 +1703,27 @@ nav.pages .last_page {
         line-height: 78px;
     }
     .header .logo {
-        text-align: center;
+        margin-bottom: 40px;
     }
     .header .logo img {
-        width: 290px;
-        display: block;
-        margin: auto;
-        margin-bottom: 25px;
+        width: 210px;
+        margin: 0;
     }
     .header .contact {
-        text-align: center;
+        position: absolute;
+        top: 25px;
+        right: 0;
+        padding-top: 0;
+    }
+    .header .contact h3 {
+        font-size: 18px;
+    }
+    .header .contact h3 span {
+        font-size: 12px;
+    }
+    .header .contact .btn_brown {
+        margin: 10px 0 0;
+        font-size: 14px;
     }
     .sidebar_right .info {
         width: 276px;
@@ -1828,14 +1850,19 @@ nav.pages .last_page {
 @media screen and (max-width: 797px) {
     .header .logo {
         float: left;
+        margin: 0;
     }
     .header .logo img {
         width: 215px;
         margin-left: 40px;
-        margin-bottom: 45px;
+    }
+    .header .navbar-nav {
+        padding-top: 30px;
     }
     .header .contact {
         text-align: center;
+        position: static;
+        margin-bottom: 20px;
     }
     .header .contact h3 {
         font-size: 26px;
@@ -1843,6 +1870,7 @@ nav.pages .last_page {
     .header .contact .btn_brown {
         font-size: 18px;
         width: 222px;
+        margin-top: 15px;
     }
     .header .navbar-nav {
         text-align: left;
