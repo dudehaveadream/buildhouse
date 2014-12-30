@@ -20,7 +20,9 @@
     <![endif]-->
   </head>
   <body>
-  <div class="container wrap">
+
+<div class="wrap">
+  <div class="container">
     <div class="header">
     	<div class="row">
     		<div class="col-lg-3 col-md-12 col-sm-12 logo"><a href="#"><img src="img/logo.png"></a></div>
@@ -37,48 +39,56 @@
     				        <li><a href="#"><div class="img"><img src="img/car.png" class="icon"><img src="img/car_hover.png" class="hover_icon"></div>ДОСТАВКА</a></li>
     				        <li><a href="#"><div class="img"><img src="img/contacts.png" class="icon"><img src="img/contacts_hover.png" class="hover_icon"></div>КОНТАКТЫ</a></li>
     				        <li><a href="#"><div class="img"><img src="img/vacan.png" class="icon"><img src="img/vacan_hover.png" class="hover_icon"></div>ВАКАНСИИ</a></li>
-                  </ul> 
+                  </ul>
   	    			  </div><!-- /.navbar-collapse -->
   			      </div>
   			    </div>
   		    </nav>
     		</div>
     		<div class="col-lg-3 col-md-12 col-sm-12 contact">
-    			<h3>+7 (383) 363-89-03</h3>
-    			<h3><span>г. Новосибирск, ул. Бетонная, д.14 оф.211</span></h3>
+    			<h3 class="hidden-xs">+7 (383) 363-89-03</h3>
+    			<h3 class="hidden-xs"><span>г. Новосибирск, ул. Бетонная, д.14 оф.211</span></h3>
     			<button type="submit" class="btn_brown">ЗАКАЗАТЬ ЗВОНОК</button>
     		</div>
     	</div>
     </div>
     <div class="row catalog_container">
       <div class="col-lg-3">
-        <ul class="sidebar">
-          <li>
-            <div class="popup_open"><a href="#">Межкомнатные двери</a></div>
-            <ul class="popup">
-              <li><a href="#">Ламинированные двери</a></li>
-              <li><a href="#">Стальные двери</a></li>
-              <li><a href="#">Противопожарные двери</a></li>
-              <li><a href="#">Строительные двери</a></li>
-              <li><a href="#">Мазонитовые двери</a></li>
-              <li><a href="#">Двери гармошкой ПВХ</a></li>
-              <li><a href="#">Шпонированные двери</a></li>
-              <li><a href="#">Финские двери</a></li>
-              <li class="new"><a href="#">Дверная фурнитура</a></li>
-            </ul>
-          </li>
-          <li>
-            <div class="popup_open"><a href="#">Погонаж для межкомнатных дверей</a></div>
-          </li>
-          <li>
-            <div class="popup_open"><a href="#">Стеновые панели</a></div>
-          </li>
-          <li>
-            <div class="popup_open new"><a href="#">Теплицы</a></div>
-          </li>
-        </ul>
-      </div>
-      <div class="col-lg-6 main_content">
+        <div class="clearfix sidebar_open hidden-md">
+          <button type="button" class="glyphicon glyphicon-list">
+          </button>
+          <span>РАЗДЕЛЫ КАТАЛОГА</span>
+        </div>
+        <div class="sidebar">
+        <a href="#" class="sb_close"></a>
+          <ul>
+            <li>
+              <div class="popup_open"><a href="#">Межкомнатные двери</a></div>
+              <ul class="popup">
+                <li><a href="#">Ламинированные двери</a></li>
+                <li><a href="#">Стальные двери</a></li>
+                <li><a href="#">Противопожарные двери</a></li>
+                <li><a href="#">Строительные двери</a></li>
+                <li><a href="#">Мазонитовые двери</a></li>
+                <li><a href="#">Двери гармошкой ПВХ</a></li>
+                <li><a href="#">Шпонированные двери</a></li>
+                <li><a href="#">Финские двери</a></li>
+                <li class="new"><a href="#">Дверная фурнитура</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="popup_open"><a href="#">Погонаж для межкомнатных дверей</a></div>
+            </li>
+            <li>
+              <div class="popup_open"><a href="#">Стеновые панели</a></div>
+            </li>
+            <li>
+              <div class="popup_open new"><a href="#">Теплицы</a></div>
+            </li>
+          </ul>
+        </div>
+      </div><!-- Sidebar:end -->
+      <div class="col-lg-10 main_content">
         <div class="catalog">
           <div class="clearfix title">
             <h5>Каталог</h5>
@@ -187,8 +197,8 @@
             </ul>
             <a href="#" class="last_page disabled">10</a>
           </nav>
-      </div>
-      <div class="col-lg-3">
+      </div><!-- Main content:end -->
+      <div class="col-lg-3  hidden-md hidden-sm hidden-xs">
         <div class="sidebar_right">
           <div class="info_container">
             <div class="info_btn"><img src="img/sb_right1.png" alt=""></div>
@@ -241,10 +251,11 @@
             </div>
           </div>
         </div>
-      </div>
+      </div><!-- Sidebar:end -->
     </div>
-  </div>
-  
+  </div><!-- Container:end -->
+</div><!-- Wrap:end -->
+
   <div class="footer">
     <div class="wrap container">
       <div class="row">
@@ -262,10 +273,10 @@
         </div>
       </div>
     </div>
-  </div><!-- end footer -->		      
-		      
-		      
-		      
+  </div><!-- end footer -->
+
+
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
