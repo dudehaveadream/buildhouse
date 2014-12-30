@@ -5,8 +5,8 @@
  */
 
 /*!
- * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=fb7e89a09d4d420926f5)
- * Config saved to config.json and https://gist.github.com/fb7e89a09d4d420926f5
+ * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=b220150e97312651f8fa)
+ * Config saved to config.json and https://gist.github.com/b220150e97312651f8fa
  */
 .btn-default,
 .btn-primary,
@@ -279,7 +279,7 @@
 .navbar-fixed-bottom {
   border-radius: 0;
 }
-@media (max-width: 767px) {
+@media (max-width: 797px) {
   .navbar .navbar-nav .open .dropdown-menu > .active > a,
   .navbar .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar .navbar-nav .open .dropdown-menu > .active > a:focus {

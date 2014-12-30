@@ -95,9 +95,7 @@ p {
 .clearfix {
     *zoom: 1;
 }
-.wrap {
-   background: rgba(255,255,255,.8);
-}
+
 .btn_brown,
 a.btn_brown {
     text-decoration: none;
@@ -235,11 +233,13 @@ a.btn_brown:focus {
 /* main content
 ----------------------------------------------------------------------------*/
 .carousel {
-    height: 400px;
 }
 .carousel .item img {
-    height: 400px;
     width: 100%;
+}
+.carousel .carousel-caption {
+    padding: 0;
+    bottom: 5px;
 }
 .carousel .carousel-caption .info {
     height: 320px;
@@ -312,7 +312,7 @@ a.btn_brown:focus {
 }
 .main_content .carousel-control.left_arrow {
     background-position: 0 0;
-    left: 1%;
+    left: 10px;
 }
 .main_content .carousel-control.left_arrow:hover {
     background-position: 0 -25px;
@@ -320,7 +320,8 @@ a.btn_brown:focus {
 }
 .main_content .carousel-control.right_arrow {
     background-position: -25px 0;
-    left: 95%;
+    left: 100%;
+    margin-left: -35px;
 }
 .main_content .carousel-control.right_arrow:hover {
     background-position: -25px -25px;
@@ -653,6 +654,15 @@ a.btn_brown:focus {
     background: #916E52;
     color: #fff;
 }
+.sidebar_left .cart_link {
+    /*    float: right;*/
+    display: inline-block;
+    border-radius: 50%;
+}
+.sidebar_left .cart_link:hover {
+    border: 3px solid #ff6513;
+}
+
 /* Sidebar right
 ---------------------------------------------------------------------------------------*/
 .sidebar_right {
@@ -1341,7 +1351,7 @@ nav.pages .last_page {
 }
 .order_card .right_content {
     width: 800px;
-    float: left;    
+    float: left;
 }
 .order_card .right_content .all_desc {
     border-bottom: 1px solid #e0e0e0;
@@ -1445,7 +1455,7 @@ nav.pages .last_page {
     float: left;
     margin-right: 5px;
     margin-top: 5px;
-    cursor: pointer; 
+    cursor: pointer;
 }
 .order_card .botom_order .chose img {
     width: 36;
@@ -1508,7 +1518,7 @@ nav.pages .last_page {
 }
 /* media
 ---------------------------------------------------------------------------------------*/
-@media screen and (min-width: 1330px) {
+/*@media screen and (min-width: 1330px) {
     .wrap {
         width: 1300px;
     }
@@ -1517,11 +1527,34 @@ nav.pages .last_page {
     .wrap {
         width: 1645px;
     }
+}*/
+.wrap {
+    margin: auto;
+    padding: 0 15px;
 }
-@media screen and (max-width: 1675px) {
-    .header .logo img {
-        width: 100%;
+.container {
+    background: rgba(255,255,255,.8);
+}
+@media screen and (min-width: 1230px) {
+    .container,
+    .wrap { width: 100%; }
+    .container {
+        padding: 0 30px;
     }
+}
+@media screen and (min-width: 1700px) {
+    .container { width: 1645px;
+    }
+    .wrap {
+        width: 1675px;
+    }
+}
+/*@media screen and (max-width: 1200px) {
+    .wrap {
+        padding: 0;
+    }
+}*/
+@media screen and (max-width: 1675px) {
     .header .navbar-nav li a {
         height: 103px;
         width: 103px;
@@ -1576,7 +1609,7 @@ nav.pages .last_page {
         padding-left: 0px;
     }
 }
-@media screen and (max-width: 1329px) {
+@media screen and (max-width: 1360px) {
     .header .contact h3 {
         font-size: 24px;
     }
@@ -1613,7 +1646,7 @@ nav.pages .last_page {
         width: 100%;
     }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1229px) {
     .header .navbar-nav li a {
         height: 123px;
         width: 123px;
@@ -1684,7 +1717,7 @@ nav.pages .last_page {
         width: auto;
     }
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1021px) {
     .catalog ul {
         padding-left: 7px;
     }
@@ -1727,7 +1760,7 @@ nav.pages .last_page {
         margin: auto;
     }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 797px) {
     .header .contact {
         text-align: center;
     }
@@ -1878,7 +1911,7 @@ nav.pages .last_page {
         height: 40px;
     }
 }
-@media screen and (max-width: 486px) {
+@media screen and (max-width: 516px) {
     .catalog ul {
         width: 202px;
         margin: auto;
