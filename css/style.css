@@ -1064,8 +1064,9 @@ nav.pages .last_page {
     margin: 5px 0;
 }
 .cart_container .total_container .btn_back_container {
-    float: left;
-    margin-top: 95px;
+    position: absolute;
+    left: 0;
+    top: 105px;
 }
 .cart_container .total_container a.back {
     background: #927054;
@@ -1749,16 +1750,13 @@ nav.pages .last_page {
     }
     .catalog ul li:nth-child(4n) {
         margin-right: 0;
-    } 
+    }
     .example {
         width: auto;
         text-align: left;
     }
     .action_container .block .block_price {
         width: 590px;
-    }
-    div.title {
-        margin-top: 50px;
     }
     div.title_gray {
         margin-top: 0;
@@ -1856,7 +1854,7 @@ nav.pages .last_page {
         margin-left: 40px;
     }
     .header .navbar-nav {
-        padding-top: 30px;
+        padding-top: 35px;
     }
     .header .contact {
         text-align: center;
@@ -2034,8 +2032,8 @@ nav.pages .last_page {
         padding-left: 50%;
     }
     .cart_container .total_container .btn_back_container {
-        float: none;
-        margin: 15px 0 0;
+        position: static;
+        margin-top: 0;
         text-align: center;
     }
     .cart_container .btn_accept_container {
