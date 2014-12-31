@@ -59,7 +59,7 @@ div.title h5:after {
     left: 100%;
     top: 0;
     width: 20px;
-    height: 43px;
+    height: 100%;
     background: url(../img/title_after.png) no-repeat;
 }
 .content_inner {
@@ -1338,8 +1338,7 @@ nav.pages .last_page {
     height: 67px;
     border: 1px solid #E1E1E1;
     line-height: 63px;
-    margin-right: 2px;
-    margin-left: 2px;
+    margin-right: 6px;
 }
 .photosgallery-std .sliderkit-nav-clip ul li a img {
     vertical-align: middle;
@@ -1403,15 +1402,18 @@ nav.pages .last_page {
     width: 290px;
     float: left;
 }
+.order_card .right_content .first_describe h6 {
+    margin-bottom: 3px;
+}
 .order_card .right_content .first_describe .name {
     font-family: 'Fregat_bold';
     color: #332e25;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 .order_card .right_content .first_describe .size {
     font-size: 16px;
     color: #332e25;
-    line-height: 17px;
+    line-height: 18px;
 }
 .order_card .right_content .first_describe .proposal {
     border: 1px solid #e0e0e0;
@@ -1443,9 +1445,12 @@ nav.pages .last_page {
 .order_card .right_content .proposal table tr td .canvas,
 .order_card .right_content .proposal table tr td .set {
     font-size: 20px;
-    padding: 5px 9px 3px;
+    padding: 1px 9px 0;
 }
-
+.order_card .right_content .proposal table tr td .canvas span,
+.order_card .right_content .proposal table tr td .set span {
+    font-size: 14px;
+}
 .order_card .right_content .second_describe {
     float: left;
     padding-left: 60px;
@@ -1559,16 +1564,7 @@ nav.pages .last_page {
 }
 /* media
 ---------------------------------------------------------------------------------------*/
-/*@media screen and (min-width: 1330px) {
-    .wrap {
-        width: 1300px;
-    }
-}
-@media screen and (min-width: 1675px) {
-    .wrap {
-        width: 1645px;
-    }
-}*/
+
 .wrap {
     margin: auto;
     padding: 0 15px;
@@ -1626,9 +1622,6 @@ nav.pages .last_page {
     .order_card .right_content .first_describe .proposal {
         margin-bottom: 20px;
     }
-    .order_card .right_content .second_describe {
-        padding-left: 0px;
-    }
 }
 @media screen and (max-width: 1555px) {
     .catalog ul {
@@ -1641,6 +1634,18 @@ nav.pages .last_page {
     }
     .catalog ul li:nth-child(3n) {
         margin-right: 0;
+    }
+    .order_card .right_content {
+        width: 450px;
+    }
+    .order_card .right_content .first_describe {
+        width: 100%;
+    }
+    .order_card .right_content .first_describe .proposal {
+        margin-bottom: 20px;
+    }
+    .order_card .right_content .second_describe {
+        padding-left: 0px;
     }
 }
 @media screen and (max-width: 1360px) {
@@ -1769,6 +1774,9 @@ nav.pages .last_page {
     .sidebar .popup li a:hover {
         color: #fff;
     }
+    .sliderkit {
+        margin-bottom: 30px;
+    }
 }
 @media screen and (max-width: 1021px) {
     .catalog ul {
@@ -1893,8 +1901,8 @@ nav.pages .last_page {
         font-size: 18px;
         width: 222px;
         margin: auto;
-        margin-top: 65px;
-        margin-bottom: 20px;
+        margin-top: 55px;
+        margin-bottom: 15px;
     }
     .sidebar_open {
         margin-left: 5px;
@@ -2035,7 +2043,7 @@ nav.pages .last_page {
         margin-bottom: 30px;
     }
     .partners .list img {
-        width: 100%;
+        width: auto;
     }
     .partners .list:nth-child(2n) {
         clear: right;
@@ -2060,6 +2068,7 @@ nav.pages .last_page {
     }
     .order_card {
         padding: 10px;
+        padding-bottom: 125px;
     }
     .order_card .slider {
         width: 260px;
@@ -2130,11 +2139,17 @@ nav.pages .last_page {
         width: 100%;
         margin: auto;
     }
+    .cart_container .presonal_data .title h5 {
+        font-size: 16px;
+    }
+    .partners .list img {
+        width: 100%;
+    }
 }
 @media screen and (max-width: 350px) {
-/*    .block .example div {
-        width: 210px !important;
-    }*/
+    .wrap {
+        padding: 0;
+    }
 }
 @media screen and (max-width: 335px) {
     .advantage ul li p {
