@@ -873,17 +873,14 @@ a.btn_brown:focus {
 .catalog .title .breadcrumb li a:hover {
     color: #f45e03;
 }
-.catalog ul {
-    padding-left: 36px;
-}
 .catalog ul li {
     float: left;
     box-shadow: 2px 3px 0 0 rgba(135,135,135,.1);
-    margin-right: 56px;
+    margin-right: 4%;
     margin-top: 25px;
 }
 
-.catalog ul li:nth-child(3n) {
+.catalog ul li:nth-child(4n) {
     margin-right: 0;
 }
 .catalog ul li a {
@@ -1620,14 +1617,8 @@ nav.pages .last_page {
     .advantage ul li {
         width: 100%;
     }
-    .catalog ul {
-        padding-left: 55px;
-    }
-    .catalog ul li:nth-child(3n) {
-        margin-right: 56px;
-    }
-    .catalog ul li:nth-child(2n) {
-        margin-right: 0;
+    .catalog ul li {
+        margin-right: 3%;
     }
     .example {
         width: 100%;
@@ -1652,6 +1643,19 @@ nav.pages .last_page {
         padding-left: 0px;
     }
 }
+@media screen and (max-width: 1555px) {
+    .catalog ul {
+        width: 690px;
+        margin: auto;
+    }
+    .catalog ul li,
+    .catalog ul li:nth-child(4n) {
+        margin-right: 42px;
+    }
+    .catalog ul li:nth-child(3n) {
+        margin-right: 0;
+    }
+}
 @media screen and (max-width: 1360px) {
     .header .contact h3 {
         font-size: 24px;
@@ -1664,16 +1668,6 @@ nav.pages .last_page {
     .header .navbar-nav li a .img {
         height: 62px;
         line-height: 62px;
-    }
-    .catalog ul {
-        padding-left: 25px;
-    }
-    .catalog ul li,
-    .catalog ul li:nth-child(3n) {
-        margin-right: 30px;
-    }
-    .catalog ul li:nth-child(2n) {
-        margin-right: 0;
     }
     .order_card .right_content {
         width: 390px;
@@ -1746,16 +1740,15 @@ nav.pages .last_page {
         margin-top: 50px;
     }
     .catalog ul {
-        padding-left: 0;
+        width: 100%;
     }
-    .catalog ul li:nth-child(2n),
-    .catalog ul li:nth-child(3n),
-    .catalog ul li {
+    .catalog ul li,
+    .catalog ul li:nth-child(3n) {
         margin-right: 43px;
     }
     .catalog ul li:nth-child(4n) {
         margin-right: 0;
-    }
+    } 
     .example {
         width: auto;
         text-align: left;
