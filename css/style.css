@@ -1284,21 +1284,17 @@ nav.pages .last_page {
     margin-top: -5px;
 }
 .action_container .block .example {
-    float: left;
     margin-bottom: 20px;
 }
 .action_container .block .example div {
     padding: 2px;
     border: 1px solid #f2e5c5;
-    width: 259px;
     text-align: center;
 }
 .action_container .block .example img {
-    width: auto;
+    width: 100%;
 }
 .action_container .block .block_price {
-    width: 450px;
-    float: right;
 }
 
 .action_container .block .component {
@@ -1621,16 +1617,6 @@ nav.pages .last_page {
     .catalog ul li {
         margin-right: 3%;
     }
-    .example {
-        width: 100%;
-        text-align: center;
-    }
-    .example div {
-        margin: auto;
-    }
-    .action_container .block .block_price {
-        width: 100%;
-    }
     .order_card .right_content {
         width: 450px;
     }
@@ -1679,9 +1665,6 @@ nav.pages .last_page {
     .order_card .botom_order button {
         float: left;
         clear: left;
-    }
-    .partners .list img {
-        width: 100%;
     }
 }
 @media screen and (max-width: 1229px) {
@@ -1740,13 +1723,7 @@ nav.pages .last_page {
     .catalog ul li:nth-child(4n) {
         margin-right: 0;
     }
-    .example {
-        width: auto;
-        text-align: left;
-    }
-    .action_container .block .block_price {
-        width: 590px;
-    }
+
     div.title_gray {
         margin-top: 0;
     }
@@ -1816,7 +1793,7 @@ nav.pages .last_page {
     .partners .list:nth-child(5n) {
         clear: none;
     }
-    .example {
+/*    .example {
         width: 100%;
         text-align: center;
     }
@@ -1826,7 +1803,7 @@ nav.pages .last_page {
     }
     .action_container .block .block_price {
         width: 100%;
-    }
+    }*/
     .order_card .slider {
         margin: auto;
         float: none;
@@ -1834,6 +1811,12 @@ nav.pages .last_page {
     .order_card .right_content {
         float: none;
         margin: auto;
+    }
+    .partners {
+        padding-left: 40px;
+    }
+    .order {
+        padding: 45px 0 100px;
     }
 }
 @media screen and (max-width: 797px) {
@@ -1986,14 +1969,14 @@ nav.pages .last_page {
     .catalog ul li:nth-child(2n) {
         margin-right: 0;
     }
+    .action_container .block {
+        padding: 20px 10px 40px
+        }
     .action_container .proposition {
         padding-left: 10px;
         padding-right: 10px;
     }
-    .block {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
+
     .contacts .contacts_team .image_container {
         float: none;
         text-align: center;
@@ -2044,6 +2027,31 @@ nav.pages .last_page {
     .cart_container .btn_accept_container a.accept {
         float: none;
     }
+    .partners {
+        padding: 30px 0 0;
+    }
+    .partners .list {
+        padding: 0 30px;
+        margin-bottom: 30px;
+    }
+    .partners .list img {
+        width: 100%;
+    }
+    .partners .list:nth-child(2n) {
+        clear: right;
+    }
+    .partners .list:nth-child(2n+1) {
+        clear: left;
+    }
+    .example {
+        text-align: center;
+    }
+    .action_container .block .example div {
+        width: 250px;
+        margin: auto;
+    }
+
+
 }
 @media screen and (max-width: 600px) {
     .catalog ul {
@@ -2076,6 +2084,9 @@ nav.pages .last_page {
         font-size: 16px;
         height: 40px;
     }
+    .partners .list {
+        padding: 0 15px;
+    }
 }
 @media screen and (max-width: 516px) {
     .cart_container .content_inner {
@@ -2102,12 +2113,6 @@ nav.pages .last_page {
     .action_container .block .block_price h1 div {
         margin-bottom: 60px;
     }
-    .block .example {
-        width: 100%;
-    }
-    .block .example div img {
-        width: 100% !important;
-    }
     .order_card .right_content .first_describe .proposal,
     .order_card .right_content .first_describe .proposal table {
         width: 100%;
@@ -2121,11 +2126,15 @@ nav.pages .last_page {
     .sidebar > ul {
         padding-left: 15px;
     }
+    .action_container .block .example div {
+        width: 100%;
+        margin: auto;
+    }
 }
 @media screen and (max-width: 350px) {
-    .block .example div {
+/*    .block .example div {
         width: 210px !important;
-    }
+    }*/
 }
 @media screen and (max-width: 335px) {
     .advantage ul li p {
