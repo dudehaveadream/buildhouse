@@ -554,7 +554,6 @@ a.btn_brown:focus {
     display: table;
     cursor: pointer;
     margin-left: 25px;
-    margin-top: 20px;
 }
 .sidebar_open button {
     width: 25px;
@@ -700,8 +699,8 @@ a.btn_brown:focus {
 }
 .sidebar_left .cart_link {
     position: absolute;
-    top: 0;
-    right: 15px;
+    top: -15px;
+    right: 35px;
     border-radius: 50%;
     margin: 3px;
     border: none;
@@ -1578,7 +1577,7 @@ nav.pages .last_page {
     padding: 0 15px;
 }
 .container {
-    background: rgba(255,255,255,.8);
+    background: rgba(255,255,255,.88);
 }
 @media screen and (min-width: 1230px) {
     .container,
@@ -1723,16 +1722,6 @@ nav.pages .last_page {
     .sidebar_right .info {
         width: 276px;
     }
-    .sidebar {
-        width: 275px;
-    }
-    .sidebar .popup_open {
-        padding-left: 28px;
-    }
-    .sidebar .popup li a {
-        padding-left: 34px;
-        width: 100%;
-    }
     .sidebar_right {
         float: none;
         display: block;
@@ -1770,7 +1759,7 @@ nav.pages .last_page {
     .sidebar {
         position: absolute;
         top: -25px;
-        z-index: 1;
+        z-index: 2222;
         width: 460px;
     }
     .sidebar > ul {
@@ -1790,6 +1779,9 @@ nav.pages .last_page {
     }
     .sidebar .sb_close:hover {
         background-position: 0 -10px;
+    }
+    .sidebar .popup_open {
+        padding-left: 28px;
     }
     .sidebar .popup_open a {
         color: #fff;
@@ -1866,11 +1858,6 @@ nav.pages .last_page {
     .header .contact h3 {
         font-size: 26px;
     }
-    .header .contact .btn_brown {
-        font-size: 18px;
-        width: 222px;
-        margin-top: 15px;
-    }
     .header .navbar-nav {
         text-align: left;
     }
@@ -1920,6 +1907,14 @@ nav.pages .last_page {
         clear: both;
         position: relative;
     }
+    .header .navbar-collapse .btn_brown {
+        padding: 5px 25px;
+        font-size: 18px;
+        width: 222px;
+        margin: auto;
+        margin-top: 65px;
+        margin-bottom: 20px;
+    }
     .sidebar_open {
         margin-left: 5px;
     }
@@ -1928,6 +1923,10 @@ nav.pages .last_page {
         left: 0;
         padding-left: 15px;
         padding-right: 15px;
+    }
+    .sidebar_open span {
+        font-size: 18px;
+        padding-top: 5px;
     }
     .sidebar > ul {
         padding-top: 95px;
@@ -1964,6 +1963,9 @@ nav.pages .last_page {
         padding-bottom: 11px;
         padding-top: 11px;
         width: 100%;
+    }
+    .sidebar_left .cart_link {
+        right: 10px;
     }
     .advantage ul li {
         height: auto;
@@ -2046,6 +2048,10 @@ nav.pages .last_page {
     }
 }
 @media screen and (max-width: 600px) {
+    .catalog ul {
+        width: 202px;
+        margin: auto;
+    }
     .order_card {
         padding: 10px;
     }
@@ -2074,10 +2080,6 @@ nav.pages .last_page {
     }
 }
 @media screen and (max-width: 516px) {
-    .catalog ul {
-        width: 202px;
-        margin: auto;
-    }
     .cart_container .content_inner {
         padding-left: 15px;
         padding-right: 15px;
