@@ -1223,8 +1223,10 @@ nav.pages .last_page {
     color: #f46103;
 }
 .action_container .proposition h1 img {
-    margin-top: -5px;
     margin: 15px;
+    margin-top: 4px;
+    margin-left: 0;
+    float: left;
 }
 .action_container .proposition .pro {
     margin-bottom: 30px;
