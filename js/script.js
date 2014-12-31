@@ -17,6 +17,9 @@ $(document).ready(function(){
 	if ($(window).width() < 1213) {
 		$('.sidebar').hide();
 	}
+	if ($(window).width() < 781) {
+    	$('.header .contact .btn_brown').appendTo('.header .navbar-collapse')
+	}
 	$('.sidebar_right .info').find('h1:first').addClass('first')
 	var sbula = $(".chose");
     sbula.click(function(e) {
@@ -27,5 +30,11 @@ $(document).ready(function(){
 $(window).resize(function(){
 	if ($(window).width() > 1212) {
 		$('.sidebar').show();
+	}
+	if ($(window).width() < 781) {
+    	$('.header .contact .btn_brown').appendTo('.header .navbar-collapse')
+	}
+	else {
+		$('.header .navbar-collapse .btn_brown').appendTo('.header .contact')
 	}
 })
