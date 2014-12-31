@@ -554,6 +554,7 @@ a.btn_brown:focus {
     display: table;
     cursor: pointer;
     margin-left: 25px;
+    margin-top: 20px;
 }
 .sidebar_open button {
     width: 25px;
@@ -1925,6 +1926,9 @@ nav.pages .last_page {
     .header .navbar-collapse {
         clear: both;
         position: relative;
+    }
+    .sidebar_open {
+        margin-left: 5px;
     }
     .sidebar {
         width: 100%;
