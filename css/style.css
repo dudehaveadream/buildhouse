@@ -11,6 +11,10 @@ body {
     font-family: 'Fregat_regular';
     color: #111111;
     background: url(../img/body_bg.jpg);
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
     background-size: cover;
     background-attachment: fixed;
 }
